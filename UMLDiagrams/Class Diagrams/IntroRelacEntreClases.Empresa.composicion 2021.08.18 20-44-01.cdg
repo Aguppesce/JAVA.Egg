@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IntroRelacEntreClases.Empresa.composicion">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="IntroRelacEntreClases.Empresa.composicion" visibility="public" xPosition="576.0" yPosition="368.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Empresa" package="IntroRelacEntreClases.Empresa.composicion" visibility="public" xPosition="753.0" yPosition="206.0">
+      <Fields>
+        <Field name="empleados" type="List&lt;Empleado&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="empleados" source="IntroRelacEntreClases.Empresa.composicion.Empresa" target="IntroRelacEntreClases.Empresa.composicion.Empleado" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

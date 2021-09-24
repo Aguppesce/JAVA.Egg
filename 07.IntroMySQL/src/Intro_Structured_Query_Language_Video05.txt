@@ -1,0 +1,44 @@
+------------------------------------------QUERY TIENDA INTRO BASE DE DATOS VIDEO 5-----------------------------------------
+
+//INNER JOIN: Da cmo resultado los valroes interesección entre dos tablas implicados en la consulta:
+//LEFT JOIN: Da como resultado los valores de la tabla indicada en el from junto con los valores
+    intersección entre las dos tablas implicadas en la consulta
+//RIGHT JOIN: Da como resultado los valores de la tabla indicada en RIght Order Join junto con los valores
+    intersección entre las dos tablas implicadas.
+//SEMI JOIN(EXISTS): Da como resultado los valores intersección entre la producto y la tabla fabricante.
+
+
+
+SELECT * FROM fabricante;
+SELECT * FROM producto;
+
+//TRAE LOS PRODUCTOS QUE SE ENCUENTRAN TANTO EN LA TABLA PRODUCTOS COMO EN LA TABLA FABRICANTES. ESTOS ESTÁN RELACIONADOS A TRAVÉS DEL CAMPO "CÓDIGO"
+SELECT * FROM producto p INNER JOIN fabricante f ON p.codigo_fabricante = f.codigo;
+
+//DA COMO RESULTADO LOS VALORES DE LA TABLA Y LE SUMA LOS VALORES DE LA INTERSECCIÓN ENTRE LAS DOS TABLAS. ES DECIR QUE SOLAMENTE TRAERA LOS FABRICANTES QUE ESTÉN RELACIONADOS CON PRODUCTO
+SELECT * FROM producto p LEFT OUTER JOIN fabricante f ON p.codigo_fabricante = f.codigo;
+
+
+//TRAE TODOS LOS FABRICANTES QUE NO TIENEN PRODUCTO SUMADO A AQUELLOS PRODUCTOS QUE TIENEN FABRICANTES 
+SELECT * FROM producto p RIGHT OUTER JOIN fabricante f ON p.codigo_fabricante = f.codigo;
+
+//PER
+SELECT * FROM producto p WHERE EXISTS (SELECT f.codigo FROM fabricante f WHERE f.codigo = p.codigo_fabricante);
+
+/*ANTI SEMI JOIN (NOT EXISTS)*/
+SELECT * FROM producto p WHERE NOT EXISTS (SELECT f.codigo FROM fabricante f WHERE f.codigo = p.codigo_fabricante);
+
+SELECT * FROM fabricante f WHERE NOT EXISTS (SELECT p.codigo_fabricante FROM producto p WHERE p.codigo_fabricante=f.codigo);
+
+/*CROSS JOIN*/
+SELECT * FROM producto p CROSS JOIN fabricante f; 
+
+
+//ESTE ORDEN NO SE PUEDE ALTERAR
+SELECT -> SELECCIÓN (UNA O VARIAS COLUMNAS DE DATOS)
+FROM -> SELECCIÓ (INVOCA LAS TABLAS DONDE PERTENENCEN MIS COLUMNAS)
+WHERE
+    GROUP BY
+    HAVING
+    ORDER BY
+    LIMIT

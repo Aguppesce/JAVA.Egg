@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IntroRelacEntreClases.Empresa.inversa">
+  <ClassDiagramComponents>
+    <Class name="Auto" package="IntroRelacEntreClases.Empresa.inversa" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="propietario" type="Persona" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Persona" package="IntroRelacEntreClases.Empresa.inversa" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="autos" type="List&lt;Auto&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="propietario" source="IntroRelacEntreClases.Empresa.inversa.Auto" target="IntroRelacEntreClases.Empresa.inversa.Persona" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="autos" source="IntroRelacEntreClases.Empresa.inversa.Persona" target="IntroRelacEntreClases.Empresa.inversa.Auto" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Auto&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,76 @@
+------------------------------------------QUERY TIENDA INTRO BASE DE DATOS VIDEO 2-----------------------------------------
+
+CLAVE PRIMARIA: Permite que un registro no sea duplicado dentro de una tabla. Específica que, en una tabla o entidad, 
+todas sus filas tengan un identificador único que diferencie a una fila de otra y también que se establezcan columnas 
+cuyo contenido es un valor único que las haces llaves candidatas para un futuro como por ejemplo: número de cédula, 
+número de seguro social o cuenta de email.
+
+CLAVE FOREANEA O SECUNDARIA: Estas se dan cuando se crean relaciones entre tablas. La "integridad referencial" asegura
+que las relaciones que existe entre llave primaria (en la tabla referenciada) y la llave foránea (en las tablas 
+referenciantes) serán siempre mantenidas. Una fila o registro en la tabla referenciada (tabla donde reside la llave primaria)
+no puede ser borrada o su llave primaria cambiada si existe una fila o registro con una llave foránea (en la tabla referenciante)
+que se refiere a esa llave primaria. En esta restricción se define una columna o combinación de columnas en las cuales su valor 
+debe corresponder al valor de la llave primaria en la misma u en otra tabla.
+
+
+//CREAMOS LA CLAVE PRIMARIA
+CREATE TABLE FABRICANTE ( CODIGO INT UNSIGNED PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL); 
+
+//CREAMOS LA CLAVE FORANEA O SECUNDARIA. 
+CREATE TABLE PRODUCTO (
+	CODIGO INT UNSIGNED PRIMARY KEY, 
+    NOMBRE VARCHAR(100) NOT NULL, 
+    PRECIO DOUBLE NOT NULL, 
+    CODIGO_FABRICANTE INT UNSIGNED NOT NULL, FOREIGN KEY (CODIGO_FABRICANTE) REFERENCES FABRICANTE(CODIGO)
+);
+
+
+SELECT * FROM FABRICANTE;
+
+SELECT * FROM PRODUCTO;
+
+
+//VINCULAMOS LAS TABLAS FABRICANTE Y PRODUCTO. ADEMAS USAMOS UN ALIAS 'FABRICANTE F' Y 'PRODUCTO P'. 
+//FINALMENTE TRAEMOS LOS PRODUCTOS Y FABRICANTES DONDE EL CODIGO DEL F SEA IGUAL AL CODIGO DEL F EN EL P (ACÁ 
+//ESTAMOS ESTABLECIENDO LA RELACIÓN, ES DECIR COMO SE TIENEN QUE VINCULAR PARA PODER TRAER LA INFORMACIÓN)
+//EN EL SELECT TRAEMOS LAS COLUMANS NOMBRE Y PRECIO DE LA TABLA P Y LA COLUMNA NOMBRE DE LA TABLA FABRICANTE
+    SELECT f.nombre, p.nombre, p.precio
+    FROM fabricante f, producto p
+    WHERE f.codigo = p.codigo_fabricante;
+
+//TRAEMOS EL/LOS PRODUCTOS Y FABRICANTES DONDE EL CODIGO DEL F SEA IGUAL AL CODIGO DEL F EN EL P Y QUE EL CODIGO DEL FABRICANTE SEA IGUAL 7
+    SELECT f.nombre, p.nombre, p.precio
+    FROM fabricante f, producto p
+    WHERE f.codigo = p.codigo_fabricante
+    AND f.codigo = 7;    
+
+//TRAEMOS EL/LOS PRODUCTOS Y FABRICANTES DONDE EL CODIGO DEL F SEA IGUAL AL CODIGO DEL F EN EL P Y QUE EL CODIGO DEL FABRICANTE SEA IGUAL 7
+    SELECT f.nombre, f.codigo
+    FROM fabricante f, producto p
+    WHERE f.codigo = p.codigo_fabricante
+    AND f.codigo = 7;    
+
+//TRAEMOS EL NOMBRE DEL FABRICANTE Y CODIGO DEL FABRICANTE DONDE EL CÓDIGO ES IGUAL A 7
+    SELECT f.nombre, f.codigo
+    FROM fabricante f, producto p
+    WHERE f.codigo = p.codigo_fabricante
+    AND f.codigo = 7;    
+
+//TRAEMOS TODOS LAS COLUMNAS DE LA TABLA PRODUCTO PERO PARA EL FABRICANTE CON CÓDIGO 7    
+    SELECT p.codigo, p.nombre, p.precio
+    FROM fabricante f, producto p
+    WHERE f.codigo = p.codigo_fabricante
+    AND f.codigo = 7;    
+    
+//TRAEMOS TODAS LAS COLUMNAS DE LA TABLA PRODUCTO PERO PARA EL FABRICANTE DE NOMBRE 'Lenovo'
+    SELECT p.codigo, p.nombre, p.precio
+    FROM fabricante f, producto p
+    WHERE f.codigo = p.codigo_fabricante
+    AND f.nombre = 'Lenovo';    
+
+//IDEM QUE LA ANTERIOR PERO ADEMÁS DE QUE SEA FABRICANTE LENOVO TAMBIÉN TENGA UN PRECIO MAYOR A 450    
+    SELECT p.codigo, p.nombre, p.precio
+    FROM fabricante f, producto p
+    WHERE f.codigo = p.codigo_fabricante
+    AND f.nombre = 'Lenovo'
+    AND p.precio > 450;    

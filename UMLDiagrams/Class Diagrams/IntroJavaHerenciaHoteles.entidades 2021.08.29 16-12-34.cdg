@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IntroJavaHerenciaHoteles.entidades">
+  <ClassDiagramComponents>
+    <Class name="Hotel" package="IntroJavaHerenciaHoteles.entidades" visibility="public" xPosition="434.0" yPosition="54.0">
+      <Fields>
+        <Field name="cantidadHabitaciones" type="Integer" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCantidadHabitaciones" returnType="Integer" visibility="public"/>
+        <Method name="setCantidadHabitaciones" returnType="void" visibility="public">
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Hotel1" package="IntroJavaHerenciaHoteles.entidades" visibility="public" xPosition="963.0" yPosition="104.0">
+      <Fields>
+        <Field name="precio" type="Double" visibility="protected"/>
+        <Field name="superficie" type="Double" visibility="protected"/>
+        <Field name="bano" type="boolean" visibility="protected"/>
+        <Field name="ascensor" type="boolean" visibility="protected"/>
+        <Field name="calefaccion" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel2" package="IntroJavaHerenciaHoteles.entidades" visibility="public" xPosition="445.0" yPosition="333.0">
+      <Fields>
+        <Field name="cajaSeguridad" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel3" package="IntroJavaHerenciaHoteles.entidades" visibility="public" xPosition="963.0" yPosition="391.0">
+      <Fields>
+        <Field name="aireAcondicionado" type="boolean" visibility="protected"/>
+        <Field name="bar" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel4" package="IntroJavaHerenciaHoteles.entidades" visibility="public" xPosition="417.0" yPosition="635.0">
+      <Fields>
+        <Field name="miniBarHabitacion" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Hotel5" package="IntroJavaHerenciaHoteles.entidades" visibility="public" xPosition="997.0" yPosition="705.0">
+      <Fields>
+        <Field name="casino" type="boolean" visibility="protected"/>
+        <Field name="restaurant" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Double" name="precio"/>
+          <Argument type="Double" name="superficie"/>
+          <Argument type="Integer" name="cantidadHabitaciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="IntroJavaHerenciaHoteles.entidades.Hotel4" target="IntroJavaHerenciaHoteles.entidades.Hotel3"/>
+    <IsRelation name="is" source="IntroJavaHerenciaHoteles.entidades.Hotel3" target="IntroJavaHerenciaHoteles.entidades.Hotel2"/>
+    <IsRelation name="is" source="IntroJavaHerenciaHoteles.entidades.Hotel2" target="IntroJavaHerenciaHoteles.entidades.Hotel1"/>
+    <IsRelation name="is" source="IntroJavaHerenciaHoteles.entidades.Hotel1" target="IntroJavaHerenciaHoteles.entidades.Hotel"/>
+    <IsRelation name="is" source="IntroJavaHerenciaHoteles.entidades.Hotel5" target="IntroJavaHerenciaHoteles.entidades.Hotel4"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

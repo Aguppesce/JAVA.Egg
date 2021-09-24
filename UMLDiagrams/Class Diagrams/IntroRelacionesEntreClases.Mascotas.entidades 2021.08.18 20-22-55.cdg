@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IntroRelacionesEntreClases.Mascotas.entidades">
+  <ClassDiagramComponents>
+    <Class name="Mascota" package="IntroRelacionesEntreClases.Mascotas.entidades" visibility="public" xPosition="133.0" yPosition="95.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apodo" type="String" visibility="private"/>
+        <Field name="tipo" type="String" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+        <Field name="cola" type="boolean" visibility="private"/>
+        <Field name="raza" type="Raza" visibility="private"/>
+        <Field name="sexo" type="SexoAnimal" visibility="private"/>
+        <Field name="energia" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Usuario" package="IntroRelacionesEntreClases.Mascotas.entidades" visibility="public" xPosition="537.0" yPosition="114.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="public"/>
+        <Field name="apellido" type="String" visibility="public"/>
+        <Field name="dni" type="int" visibility="public"/>
+        <Field name="nacimiento" type="Date" visibility="public"/>
+        <Field name="pais" type="String" visibility="public"/>
+        <Field name="sexo" type="SexoHumano" visibility="public"/>
+        <Field name="mascota" type="List&lt;Mascota&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="mascota" source="IntroRelacionesEntreClases.Mascotas.entidades.Usuario" target="IntroRelacionesEntreClases.Mascotas.entidades.Mascota" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Mascota&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

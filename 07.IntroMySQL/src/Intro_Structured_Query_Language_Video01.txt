@@ -1,0 +1,46 @@
+------------------------------------------QUERY TIENDA INTRO BASE DE DATOS VIDEO 1-----------------------------------------
+
+CUANDO CREAMOS Y DEFINIMOS NUEVAS BASES DE DATOS, CAMPOS E ÍNDICES ESTAMOS 
+HABLANDO DE DDL (LENGUAJE DE DEFINICIÓN DE DATOS | DATA DEFINITION LANGUAGE).
+ESTAS ACCIONES SE REALIZAN A TRAVÉS DE CREAT, DROP Y ALTER. 
+
+//CREAR BASE DE DATOS O ESQUEMA
+CREATE SCHEMA 'nombre_de_la_base_de_datos';
+
+//CREAR TABLA
+CREATE TABLE 'nombre_de_la_base_de_datos','nombre_de_la_tabla' ('primera_columna' VARCHAR(255) NOT NULL, 'segunda_columna' INT NULL);
+
+//ELIMINAR TABLA
+DROP TABLE 'nombre_de_la_base_de_datos','nombre_de_la_tabla';
+
+//ELIMINAR BASE DE DATOS O ESQUEMA
+DROP DATABASE 'nombre_de_la_base_de_datos';
+
+//MODIFICAR NOMBRE DE UN ATRIBUTO
+ALTER TABLE 'nombre_de_la_base_de_datos','nombre_de_la_tabla' CHANGE COLUMN 'nombre_antiguo' 'nombre_nuevo' VARCHAR(255) NOT NULL;
+
+//MODIFICAR LONGITUD DE UN ATRIBUTO
+ALTER TABLE 'nombre_de_la_base_de_datos','nombre_de_la_tabla' CHANGE COLUMN 'nombre_columna' 'nombre_columna' VARCHAR(500) NOT NULL;
+
+//SCRIPT BASE DE DATOS TIENDA_SIMPLE
+DROP DATABASE IF EXISTS tienda_simple;
+CREATE DATABASE tienda CHARACTER SET utf8mb4;
+USE tienda_simple;
+
+CREATE TABLE fabricante (
+  codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL
+);
+
+INSERT INTO fabricante VALUES(1, 'Asus');
+INSERT INTO fabricante VALUES(2, 'Lenovo');
+INSERT INTO fabricante VALUES(3, 'Hewlett-Packard');
+INSERT INTO fabricante VALUES(4, 'Samsung');
+INSERT INTO fabricante VALUES(5, 'Seagate');
+INSERT INTO fabricante VALUES(6, 'Crucial');
+INSERT INTO fabricante VALUES(7, 'Gigabyte');
+INSERT INTO fabricante VALUES(8, 'Huawei');
+INSERT INTO fabricante VALUES(9, 'Xiaomi');
+
+//CONSULTA SIMPLE
+SELECT * FROM FABRICANTE

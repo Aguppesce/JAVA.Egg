@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IntroRelacEntreClases.Empresa.reflexiva">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="IntroRelacEntreClases.Empresa.reflexiva" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="amigos" type="List&lt;Persona&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="amigos" source="IntroRelacEntreClases.Empresa.reflexiva.Persona" target="IntroRelacEntreClases.Empresa.reflexiva.Persona" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Persona&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
