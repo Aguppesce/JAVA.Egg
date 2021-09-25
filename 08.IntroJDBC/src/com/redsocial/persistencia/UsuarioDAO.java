@@ -30,7 +30,8 @@ public final class UsuarioDAO extends DAO {
             }
 
             String sql = "UPDATE Usuario SET "
-                    + "clave = '" + usuario.getClave() + "' WHERE correoElectronico = '" + usuario.getCorreoElectronico() + "'";
+                    + "clave = '" + usuario.getClave() + "' WHERE correoElectronico = '" 
+                    + usuario.getCorreoElectronico() + "'";
 
             insertarModificarEliminar(sql);
         } catch (Exception e) {
