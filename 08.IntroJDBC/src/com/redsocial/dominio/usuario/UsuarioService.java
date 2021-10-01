@@ -90,6 +90,38 @@ public class UsuarioService {
         }
     }
 
+    public Collection<Usuario> listarUsuario() throws Exception {
+
+        try {
+
+            Collection<Usuario> usuarios = dao.listarUsuarios();
+
+            return usuarios;
+        } catch (Exception e) {
+            throw e;
+        }
+    }
+
+    public void imprimirUsuarios() throws Exception {
+
+        try {
+
+            //Listamos los usuarios
+            Collection<Usuario> usuarios = listarUsuario();
+
+            //Imprimimos los usuarios
+            if (usuarios.isEmpty()) {
+                throw new Exception("No existen usuarios para imprimir");
+            } else {
+                for (Usuario u : usuarios) {
+                    System.out.println(u);
+                }
+            }
+        } catch (Exception e) {
+            throw e;
+        }
+    }
+    
     public Usuario buscarUsuarioPorCorreoElectronico(String correoElectronico) throws Exception {
 
         try {
@@ -119,38 +151,6 @@ public class UsuarioService {
             Usuario usuario = dao.buscarUsuarioPorId(id);
 
             return usuario;
-        } catch (Exception e) {
-            throw e;
-        }
-    }
-
-    public Collection<Usuario> listarUsuario() throws Exception {
-
-        try {
-
-            Collection<Usuario> usuarios = dao.listarUsuarios();
-
-            return usuarios;
-        } catch (Exception e) {
-            throw e;
-        }
-    }
-
-    public void imprimirUsuarios() throws Exception {
-
-        try {
-
-            //Listamos los usuarios
-            Collection<Usuario> usuarios = listarUsuario();
-
-            //Imprimimos los usuarios
-            if (usuarios.isEmpty()) {
-                throw new Exception("No existen usuarios para imprimir");
-            } else {
-                for (Usuario u : usuarios) {
-                    System.out.println(u);
-                }
-            }
         } catch (Exception e) {
             throw e;
         }
