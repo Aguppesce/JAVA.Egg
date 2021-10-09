@@ -67,11 +67,16 @@ public class LibroDAO {
         Libro libro = (Libro) em.createQuery("SELECT l FROM Libro l").getSingleResult();
         return libro;
     }
+    
+    public List<Libro> buscarLibros() throws ExcepcionLibreria{ //listarLibros
+	try{
+		//Forma Completa
+		List<Libro> libros=em.createQuery("SELECT l FROM Libro", Libro.class).getResultList();
+		return libros;	
+	}catch(Exception e){			
+		throw new ExcepcionLibreria("Error al buscar libros");
+	}
+}
 
-    //CONSULTA SIN PARÁMETROS
-    public List<Libro> listarLibros() throws ExcepcionLibreria {
-        List<Libro> libros = em.createQuery("SELECT l FROM Libro l")
-                .getResultList();
-        return libros;
-    }
+    
 }

@@ -74,7 +74,7 @@ public class LibroService {
     public boolean validarTitulo(String tituloI) throws ExcepcionLibreria {
         boolean validar = false;
         try {
-            List<Libro> libros = listaLibros();
+            List<Libro> libros = daoLibro.buscarLibros();
             for (Libro aux : libros) {
                 if (aux.getTitulo().equalsIgnoreCase(tituloI)) {
                     throw new ExcepcionLibreria("Título ya registrado, ingrese otro!");
@@ -85,46 +85,26 @@ public class LibroService {
             throw e;
         }
         return validar;
-    }      
-
-    public List<Libro> listaLibros() throws ExcepcionLibreria {
-        try {
-            List<Libro> libros = daoLibro.listarLibros();
-            return libros;
-        } catch (ExcepcionLibreria e) {
-            throw e;
-        }
-    }
-
-    public void imprimirLibros() throws ExcepcionLibreria {
-        try {
-            //Listamos los autores
-            List<Libro> libros = listaLibros();
-
-            //Imprimimos los autores - Solo algunos atributos....
-            if (libros.isEmpty()) {
-                throw new ExcepcionLibreria("No existen libro para imprimir");
-            } else {
-                for (Libro aux : libros) {
-                    System.out.println("*****************************************");
-                    System.out.println(" Nombre: " + aux.getTitulo()
-                            + "\n ISBN: " + aux.getIsbn()
-                            + "\n Año: " + aux.getAnio()
-                            + "\n Ejemplares: " + aux.getEjemplares()
-                            + "\n Ejemplares Prestados: " + aux.getEjemplaresPrestados()
-                            + "\n Ejemplares Restantes: " + aux.getEjemplaresRestantes()
-                            + "\n Autor: " + aux.getAutor().getNombre()
-                            + "\n Editorial: " + aux.getEditorial().getNombre()
-                            + "\n Alta: " + aux.getAlta());
-                }
-            }
-        } catch (ExcepcionLibreria e) {
-            System.out.println(e.getMessage());
-        }
     }
 
     public void imprimirUnLibro(String titulo) throws Exception {
         System.out.println(daoLibro.buscarLibroPorTitulo(titulo));
+    }
+    
+    public void mostrarLibros() throws Exception {
+        try{
+            List<Libro> libros = daoLibro.buscarLibros();
+            if(libros.isEmpty()){
+                System.out.println("No se ha cargado ningún libro!");
+            } else{
+                System.out.println("\nLIBROS");
+                System.out.printf("%-16s%-40s%-25s%-15s%-8s%-12s%-12s%n", "ISBN", "TÍTULO", "AUTOR", "EDITORIAL", "AÑO", "EJEMPLARES", "PRESTADOS", "RESTANTES");
+                libros.forEach(System.out::print);
+                System.out.println();
+            }
+        }catch(Exception e){
+            throw e;
+        }
     }
 
     public void modificarLibro(String titulo, Integer anio, String nombreAutor, String nombreEditorial) throws Exception {

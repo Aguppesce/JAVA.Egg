@@ -16,10 +16,37 @@ public class MenuLibreria {
     private final LibroService libroService;
 
     public MenuLibreria() {
-        this.leer = new Scanner(System.in);
+        this.leer = new Scanner(System.in).useDelimiter("\n");
         this.autorService = new AutorService();
         this.editorialService = new EditorialService();
         this.libroService = new LibroService();
+    }
+    
+    public void menu() throws Exception {
+        Integer opcion;
+        do {
+            System.out.println("1) MENU LIBRO");//OK
+            System.out.println("2) MENU AUTOR");//OK
+            System.out.println("3) MENU EDITORIAL");//OK
+            System.out.println("0) SALIR");
+            System.out.print("Su opción: ");
+            opcion = leer.nextInt();
+            switch (opcion) {
+                case 1:
+                    menuLibro();
+                    break;
+                case 2:
+                    menuAutor();
+                    break;
+                case 3:
+                    menuEditorial();
+                    break;                
+                case 0:
+                    System.exit(0);
+                    break;
+            }            
+            limpiarPantalla();
+        } while (opcion!=0);
     }
 
     public void menuLibro() throws Exception {
@@ -30,9 +57,7 @@ public class MenuLibreria {
             System.out.println(" 1) Crear Libro");//OK
             System.out.println(" 2) Mostrar Libros");//OK
             System.out.println(" 3) Modificar Libro");//OK
-            System.out.println(" 4) Eliminar Libro");//OK
-            System.out.println(" 0) Volver al menu principal");
-
+            System.out.println(" 4) Eliminar Libro");//OK            
             System.out.print("Su opción: ");
             int opcion = leer.nextInt();
             switch (opcion) {
@@ -49,12 +74,10 @@ public class MenuLibreria {
                     System.out.print("Escriba el libro que quiere eliminar: ");
                     String libroAEliminar = leer.next();
                     libroService.eliminarLibro(libroAEliminar);
-                    break;
-                case 0:                    
-                    break;
+                    break;                
             }
-            System.out.println("Desea realizar una nueva consulta o gestion ???:SI/NO");
-            respuesta = leer.next();
+            System.out.println("Realizar otra operación: SI | Volver al menu principal: Presione cualquier tecla");
+            respuesta = leer.next();            
             respuesta = respuesta.toUpperCase();
             limpiarPantalla();
         } while ("SI".equals(respuesta));
@@ -68,9 +91,8 @@ public class MenuLibreria {
             System.out.println(" 1) Crear Autor");//OK
             System.out.println(" 2) Mostrar Autores");//OK
             System.out.println(" 3) Modificar Autor");//OK
-            System.out.println(" 4) Eliminar Autor");//OK
-            System.out.println(" 0) SALIR");
-            System.out.print("   Su opción: ");
+            System.out.println(" 4) Eliminar Autor");//OK            
+            System.out.print("Su opción: ");
             int opcion = leer.nextInt();
             switch (opcion) {
                 case 1:
@@ -86,12 +108,9 @@ public class MenuLibreria {
                     System.out.print("Escriba el autor que quiere eliminar: ");
                     String autorAEliminar = leer.next();
                     autorService.eliminarAutor(autorAEliminar);
-                    break;
-                case 0:
-                    System.exit(0);
-                    break;
+                    break;               
             }
-            System.out.println("Desea realizar una nueva consulta o gestion ???:SI/NO");
+            System.out.println("Realizar otra operación: SI | Volver al menu principal: Presione cualquier tecla");
             respuesta = leer.next();
             respuesta = respuesta.toUpperCase();
             limpiarPantalla();
@@ -106,9 +125,8 @@ public class MenuLibreria {
             System.out.println(" 1) Crear Editorial");//OK
             System.out.println(" 2) Mostrar Editoriales");//OK
             System.out.println(" 3) Modificar Editorial");//OK
-            System.out.println(" 4) Eliminar Editorial");//OK
-            System.out.println(" 0) SALIR");
-            System.out.print("   Su opción: ");
+            System.out.println(" 4) Eliminar Editorial");//OK            
+            System.out.print("Su opción: ");
             int opcion = leer.nextInt();
             switch (opcion) {
                 case 1:
@@ -124,48 +142,14 @@ public class MenuLibreria {
                     System.out.print("Escriba la editorial que quiere eliminar: ");
                     String editorialAEliminar = leer.next();
                     autorService.eliminarAutor(editorialAEliminar);
-                    break;
-                case 0:
-                    System.exit(0);
-                    break;
+                    break;                
             }
-            System.out.println("Desea realizar una nueva consulta o gestion ???:SI/NO");
+            System.out.println("Realizar otra operación: SI | Volver al menu principal: Presione cualquier tecla");
             respuesta = leer.next();
             respuesta = respuesta.toUpperCase();
             limpiarPantalla();
         } while ("SI".equals(respuesta));
-    }
-
-    public void menu() throws Exception {
-        String respuesta;
-        do {
-            System.out.println("1) MENU LIBRO");//OK
-            System.out.println("2) MENU AUTOR");//OK
-            System.out.println("3) MENU EDITORIAL");//OK
-            System.out.println("0) SALIR");
-            System.out.print("  Su opción: ");
-            int opcion = leer.nextInt();
-            switch (opcion) {
-                case 1:
-                    menuLibro();
-                    break;
-                case 2:
-                    menuAutor();
-                    break;
-                case 3:
-                    menuEditorial();
-                    break;                
-                case 0:
-                    System.exit(0);
-                    break;
-            }
-            System.out.println("Desea realizar una nueva consulta o gestion ???:SI/NO");
-            respuesta = leer.next();
-            respuesta = respuesta.toUpperCase();
-            //limpiarPantalla();
-        } while ("SI".equals(respuesta));
-
-    }
+    }    
 
     public void limpiarPantalla() throws AWTException {
         //Dejo este metodo para ir borrando la consola.. y que no sea un desorden.
