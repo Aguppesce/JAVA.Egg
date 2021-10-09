@@ -25,8 +25,8 @@ public class LibroDAO {
         em.getTransaction().commit();
     }
 
-    public void eliminarLibroPorId(String id) throws ExcepcionLibreria {
-        Libro libro = buscarLibroPorId(id);
+    public void eliminarLibroPorIsbn(Long isbn) throws ExcepcionLibreria {
+        Libro libro = buscarLibroPorIsbn(isbn);
         em.getTransaction().begin();
         em.remove(libro);
         em.getTransaction().commit();
@@ -37,12 +37,6 @@ public class LibroDAO {
         em.getTransaction().begin();
         em.remove(libro);
         em.getTransaction().commit();
-    }
-
-    //CONSULTA
-    public Libro buscarLibroPorId(String id) throws ExcepcionLibreria {
-        Libro libro = em.find(Libro.class, id);
-        return libro;
     }
 
     public Libro buscarLibroPorIsbn(Long isbn) throws ExcepcionLibreria {
@@ -67,16 +61,14 @@ public class LibroDAO {
         Libro libro = (Libro) em.createQuery("SELECT l FROM Libro l").getSingleResult();
         return libro;
     }
-    
-    public List<Libro> buscarLibros() throws ExcepcionLibreria{ //listarLibros
-	try{
-		//Forma Completa
-		List<Libro> libros=em.createQuery("SELECT l FROM Libro", Libro.class).getResultList();
-		return libros;	
-	}catch(Exception e){			
-		throw new ExcepcionLibreria("Error al buscar libros");
-	}
-}
 
-    
+    public List<Libro> buscarLibros() throws ExcepcionLibreria { //listarLibros
+        try {
+            //Forma Completa
+            List<Libro> libros = em.createQuery("SELECT l FROM Libro l", Libro.class).getResultList();
+            return libros;
+        } catch (Exception e) {
+            throw new ExcepcionLibreria("Error al buscar libros");
+        }
+    }
 }

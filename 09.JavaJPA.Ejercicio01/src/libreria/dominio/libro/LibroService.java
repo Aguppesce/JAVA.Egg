@@ -91,19 +91,31 @@ public class LibroService {
         System.out.println(daoLibro.buscarLibroPorTitulo(titulo));
     }
     
-    public void mostrarLibros() throws Exception {
-        try{
+   public void imprimirLibros() throws ExcepcionLibreria {
+        try {
+            //Listamos los autores
             List<Libro> libros = daoLibro.buscarLibros();
-            if(libros.isEmpty()){
-                System.out.println("No se ha cargado ningún libro!");
-            } else{
-                System.out.println("\nLIBROS");
-                System.out.printf("%-16s%-40s%-25s%-15s%-8s%-12s%-12s%n", "ISBN", "TÍTULO", "AUTOR", "EDITORIAL", "AÑO", "EJEMPLARES", "PRESTADOS", "RESTANTES");
-                libros.forEach(System.out::print);
-                System.out.println();
+
+            //Imprimimos los autores - Solo algunos atributos....
+            if (libros.isEmpty()) {
+                throw new ExcepcionLibreria("No existen libro para imprimir");
+            } else {
+                //System.out.printf("%-25s%-15s%-8s%-12s%-12s%-12s%-15s%-15s%n", "Nombre" , "ISBN", "Año", "Ejemplares", "Prestados", "Restantes", "Autor", "Editorial", "Alta");
+                for (Libro aux : libros) {
+                    
+                    System.out.println(" Nombre: " + aux.getTitulo()
+                            + " | ISBN: " + aux.getIsbn()
+                            + " | Año: " + aux.getAnio()
+                            + " | Ejemplares: " + aux.getEjemplares()
+                            + " | Ejemplares Prestados: " + aux.getEjemplaresPrestados()
+                            + " | Ejemplares Restantes: " + aux.getEjemplaresRestantes()
+                            + " | Autor: " + aux.getAutor().getNombre()
+                            + " | Editorial: " + aux.getEditorial().getNombre()
+                            + " | Alta: " + aux.getAlta());
+                }
             }
-        }catch(Exception e){
-            throw e;
+        } catch (ExcepcionLibreria e) {
+            System.out.println(e.getMessage());
         }
     }
 
@@ -120,7 +132,7 @@ public class LibroService {
             libro.setTitulo(titulo);
             
             
-            if (anio == null || anio < 800) {
+            if (anio == null) {
                 throw new Exception("Debe indicar un anio");
             }
             libro.setAnio(anio);
@@ -163,13 +175,13 @@ public class LibroService {
         }
     }
 
-    public Libro buscarLibroPorId(String id) throws Exception {
+    public Libro buscarLibroPorIsbn(Long isbn) throws Exception {
         try {
             //Validación
-            if (id == null) {
+            if (isbn == null) {
                 throw new Exception("Debe indicar el id");
             }
-            Libro libro = daoLibro.buscarLibroPorId(id);
+            Libro libro = daoLibro.buscarLibroPorIsbn(isbn);
             return libro;
         } catch (Exception e) {
             throw e;

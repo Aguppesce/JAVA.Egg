@@ -230,8 +230,8 @@ public class MenuLibreria {
 
     public Libro encontrarLibro() throws Exception {
         System.out.println("Ingrese el ID del libro");
-        String idLibro = leer.next();
-        Libro libro = libroService.buscarLibroPorId(idLibro);
+        Long isbnLibro = leer.nextLong();
+        Libro libro = libroService.buscarLibroPorIsbn(isbnLibro);
         return libro;
     }
 
