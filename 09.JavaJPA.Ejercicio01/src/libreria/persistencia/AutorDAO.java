@@ -44,42 +44,66 @@ public class AutorDAO {
         Autor autor = em.find(Autor.class, id);
         return autor;
     }
-
-    //CONSULTA CON PARÁMETROS
-    public Autor buscarAutorPorNombre(String nombreAutor) throws ExcepcionLibreria {
-        try {
-            Autor autor = (Autor) em.createQuery("SELECT a FROM Autor a WHERE a.nombre = :nombreAutor", Autor.class)
-                    .setParameter("nombre", nombreAutor)
-                    .getSingleResult();
-            return autor;
-        } catch(NoResultException e){
-            return null;
-        } catch(Exception e){
-            throw new ExcepcionLibreria("Error al buscar autor por nombre");
-        }
+    
+    public Autor buscarAutorPorNombre(String nombre) throws ExcepcionLibreria {
+        Autor autor = (Autor) em.createQuery("SELECT a"
+                + " FROM Autor a"
+                + " WHERE a.nombre LIKE :nombre").
+                setParameter("nombre", nombre).
+                getSingleResult();
+        return autor;
     }
+
 
     public Autor buscarUnAutor() throws ExcepcionLibreria {
         Autor autor = (Autor) em.createQuery("SELECT a FROM Autor a").getSingleResult();
         return autor;
     }
 
-    //CONSULTA SIN PARÁMETROS
-    public List<Autor> listarAutores() throws ExcepcionLibreria {
-        List<Autor> autores = em.createQuery("SELECT a FROM Autor a").
-                getResultList();
-        return autores;
-    }
     
-    //C: obtenerAutores -> List | A: listaAutores -> Collection
-    public List<Autor> listaAutores() throws ExcepcionLibreria {
+    
+    public List<Autor> buscarAutores() throws ExcepcionLibreria { //listarLibros
         try {
-            List<Autor> autores = listarAutores();
+            //Forma Completa
+            List<Autor> autores = em.createQuery("SELECT a FROM Autor a", Autor.class).getResultList();
             return autores;
-        } catch (ExcepcionLibreria e) {
-            System.out.println(e.getMessage());
-            throw new ExcepcionLibreria("Error al obtener autores!");
+        } catch (Exception e) {
+            throw new ExcepcionLibreria("Error al buscar autores");
         }
     }
 
 }
+
+
+
+//MÉTODOS ALTERNATIVOS
+//CONSULTA SIN PARÁMETROS
+//    public List<Autor> listarAutores() throws ExcepcionLibreria {
+//        List<Autor> autores = em.createQuery("SELECT a FROM Autor a").
+//                getResultList();
+//        return autores;
+//    }
+//    
+//    //C: obtenerAutores -> List | A: listaAutores -> Collection
+//    public List<Autor> listaAutores() throws ExcepcionLibreria {
+//        try {
+//            List<Autor> autores = listarAutores();
+//            return autores;
+//        } catch (ExcepcionLibreria e) {
+//            System.out.println(e.getMessage());
+//            throw new ExcepcionLibreria("Error al obtener autores!");
+//        }
+//    }
+//CONSULTA CON PARÁMETROS
+//    public Autor buscarAutorPorNombre(String nombreAutor) throws ExcepcionLibreria {
+//        try {
+//            Autor autor = (Autor) em.createQuery("SELECT a FROM Autor a WHERE a.nombre = :nombreAutor", Autor.class)
+//                    .setParameter("nombre", nombreAutor)
+//                    .getSingleResult();
+//            return autor;
+//        } catch(NoResultException e){
+//            return null;
+//        } catch(Exception e){
+//            throw new ExcepcionLibreria("Error al buscar autor por nombre");
+//        }
+//    }

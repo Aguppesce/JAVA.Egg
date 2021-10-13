@@ -11,12 +11,10 @@ import libreria.utilidad.Utilidad;
 
 public class EditorialService {
 
-    private EditorialDAO daoEditorial;
-    private final Scanner leer;
+    private EditorialDAO daoEditorial;    
 
     public EditorialService() {
-        this.daoEditorial = new EditorialDAO();
-        this.leer = new Scanner(System.in).useDelimiter("\n");
+        this.daoEditorial = new EditorialDAO();        
     }
 
     public Editorial crearEditorial(String nombre) throws ExcepcionLibreria {
@@ -41,6 +39,30 @@ public class EditorialService {
         } catch (ExcepcionLibreria e) {
             throw e;
         }
+    }
+    
+    //C: mostrarAutores | A: imprimirAutores
+    public void imprimirEditoriales() throws ExcepcionLibreria {
+        try {
+            //Listamos los autores
+            List<Editorial> editoriales = daoEditorial.listaEditoriales();
+
+            //Imprimimos los autores - Solo algunos atributos....
+            if (editoriales.isEmpty()) {
+                throw new ExcepcionLibreria("No existe autores para mostrar");
+            } else {
+                for (Editorial aux : editoriales) {
+                    System.out.println("*****************************************");
+                    System.out.println(+aux.getId()+") " + aux.getNombre());
+                }
+            }
+        } catch (ExcepcionLibreria e) {
+            throw e;
+        }
+    }
+
+    public void imprimirUnaEditorial(String nombre) throws ExcepcionLibreria {
+        System.out.println(daoEditorial.buscarEditorialPorNombre(nombre));
     }
     
     public boolean validarEditorial(String nombreEditorial) throws ExcepcionLibreria {
@@ -90,31 +112,6 @@ public class EditorialService {
         } catch (ExcepcionLibreria e) {
             throw e;
         }
-    }
-   
-
-    //C: mostrarAutores | A: imprimirAutores
-    public void imprimirEditoriales() throws ExcepcionLibreria {
-        try {
-            //Listamos los autores
-            List<Editorial> editoriales = daoEditorial.listaEditoriales();
-
-            //Imprimimos los autores - Solo algunos atributos....
-            if (editoriales.isEmpty()) {
-                throw new ExcepcionLibreria("No existe autores para mostrar");
-            } else {
-                for (Editorial aux : editoriales) {
-                    System.out.println("*****************************************");
-                    System.out.println(+aux.getId()+") " + aux.getNombre());
-                }
-            }
-        } catch (ExcepcionLibreria e) {
-            throw e;
-        }
-    }
-
-    public void imprimirUnaEditorial(String nombre) throws ExcepcionLibreria {
-        System.out.println(daoEditorial.buscarEditorialPorNombre(nombre));
     }
     
     public Editorial buscarEditorialPorNombre(String nombre) throws Exception {

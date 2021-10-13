@@ -60,7 +60,7 @@ public class LibroService {
             Autor nuevoAutor = autorService.crearAutor(nombreAutor);
             libro.setAutor(nuevoAutor);
             
-            //VALIDAR EDITORIAL
+            //VALIDAR EDITORIAL            
             Editorial nuevaEditorial = editorialService.crearEditorial(nombreEditorial);            
             libro.setEditorial(nuevaEditorial);
 
@@ -77,7 +77,7 @@ public class LibroService {
             List<Libro> libros = daoLibro.buscarLibros();
             for (Libro aux : libros) {
                 if (aux.getTitulo().equalsIgnoreCase(tituloI)) {
-                    throw new ExcepcionLibreria("Título ya registrado, ingrese otro!");
+                    throw new ExcepcionLibreria("Este título ya está registrado. Ingrese otro!");
                 }
             }
             validar = true;
@@ -94,16 +94,15 @@ public class LibroService {
    public void imprimirLibros() throws ExcepcionLibreria {
         try {
             //Listamos los autores
-            List<Libro> libros = daoLibro.buscarLibros();
-
+            List<Libro> libros = daoLibro.buscarLibros();            
             //Imprimimos los autores - Solo algunos atributos....
             if (libros.isEmpty()) {
-                throw new ExcepcionLibreria("No existen libro para imprimir");
+                throw new ExcepcionLibreria("No existen libro para imprimir!");
             } else {
                 //System.out.printf("%-25s%-15s%-8s%-12s%-12s%-12s%-15s%-15s%n", "Nombre" , "ISBN", "Año", "Ejemplares", "Prestados", "Restantes", "Autor", "Editorial", "Alta");
-                for (Libro aux : libros) {
-                    
-                    System.out.println(" Nombre: " + aux.getTitulo()
+                Integer i = 0;
+                for (Libro aux : libros) {                    
+                    System.out.println((i+1)+") Nombre: " + aux.getTitulo()
                             + " | ISBN: " + aux.getIsbn()
                             + " | Año: " + aux.getAnio()
                             + " | Ejemplares: " + aux.getEjemplares()
@@ -112,6 +111,7 @@ public class LibroService {
                             + " | Autor: " + aux.getAutor().getNombre()
                             + " | Editorial: " + aux.getEditorial().getNombre()
                             + " | Alta: " + aux.getAlta());
+                    i++;
                 }
             }
         } catch (ExcepcionLibreria e) {
@@ -119,16 +119,15 @@ public class LibroService {
         }
     }
 
-    public void modificarLibro(String titulo, Integer anio, String nombreAutor, String nombreEditorial) throws Exception {
+    public void modificarLibro(String modificarTitulo, String titulo, Integer anio, String nombreAutor, String nombreEditorial) throws Exception {
         try {            
             //Buscar Libro
-            Libro libro = buscarLibroPorTitulo(titulo);
+            Libro libro = buscarLibroPorTitulo(modificarTitulo);
             
             //Validación            
             if (titulo == null || titulo.trim().isEmpty()) {
                 throw new Exception("Debe indicar el título que quiere modificar");
-            }
-            validarTitulo(titulo);
+            }            
             libro.setTitulo(titulo);
             
             

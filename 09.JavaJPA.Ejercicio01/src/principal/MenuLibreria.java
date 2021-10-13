@@ -68,7 +68,10 @@ public class MenuLibreria {
                     libroService.imprimirLibros();
                     break;
                 case 3:
-                    libroService.modificarLibro(cargarTitulo(), cargarAnio(), cargarAutor(), cargarEditorial());
+                    libroService.imprimirLibros();
+                    System.out.print("Escriba el título del libro que quiere modificar: ");
+                    String modificarTitulo = leer.next();
+                    libroService.modificarLibro(modificarTitulo, cargarTitulo(), cargarAnio(), cargarAutor(), cargarEditorial());
                     break;
                 case 4:
                     System.out.print("Escriba el libro que quiere eliminar: ");
@@ -167,7 +170,7 @@ public class MenuLibreria {
         String tituloI = leer.next();
         try {
             if (libroService.validarTitulo(tituloI)) {
-                System.out.println("Título registrado!");
+                System.out.println("Se ha registrado el título!");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());

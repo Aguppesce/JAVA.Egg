@@ -7,6 +7,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -25,9 +27,11 @@ public class Libro {
     private Integer ejemplaresPrestados;
     @Column(nullable = false)
     private Integer ejemplaresRestantes;
-    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(nullable=false)
+    @ManyToOne
     private Autor autor;    
-    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(nullable=false)
+    @ManyToOne
     private Editorial editorial;
     @Column(nullable = false)
     private Boolean alta;    

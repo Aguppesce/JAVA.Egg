@@ -49,9 +49,9 @@ public class LibroDAO {
 
     //CONSULTA CON PARÁMETROS
     public Libro buscarLibroPorTitulo(String titulo) throws ExcepcionLibreria {
-        Libro libro = (Libro) em.createQuery("SELECT l "
+        Libro libro = (Libro) em.createQuery("SELECT l"
                 + " FROM Libro l"
-                + " WHERE l.tiulo LIKE :titulo").
+                + " WHERE l.titulo LIKE :titulo").
                 setParameter("titulo", titulo).
                 getSingleResult();
         return libro;

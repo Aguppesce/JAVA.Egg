@@ -1,8 +1,6 @@
 package libreria.dominio.autor;
 
 import java.util.List;
-import java.util.Scanner;
-import java.util.UUID;
 import libreria.dominio.autor.Autor;
 import libreria.excepcion.ExcepcionLibreria;
 import libreria.persistencia.AutorDAO;
@@ -11,11 +9,9 @@ import libreria.utilidad.Utilidad;
 public class AutorService {
 
     private AutorDAO daoAutor;
-    private final Scanner leer;
-
+    
     public AutorService() {
-        this.daoAutor = new AutorDAO();
-        this.leer = new Scanner(System.in).useDelimiter("\n");
+        this.daoAutor = new AutorDAO();        
     }
 
     public Autor crearAutor(String nombre) throws ExcepcionLibreria {
@@ -43,7 +39,7 @@ public class AutorService {
     public boolean validarAutor(String nombreAutor) throws ExcepcionLibreria {
         boolean validar = false;
         try {
-            List<Autor> autores = daoAutor.listaAutores();
+            List<Autor> autores = daoAutor.buscarAutores();
             for (Autor aux : autores) { 
                 if (aux.getNombre().equalsIgnoreCase(nombreAutor)) {
                     throw new ExcepcionLibreria("Autor ya registrado, ingrese otro");
@@ -60,15 +56,17 @@ public class AutorService {
     public void imprimirAutores() throws ExcepcionLibreria {
         try {
             //Listamos los autores
-            List<Autor> autores = daoAutor.listaAutores();
+            List<Autor> autores = daoAutor.buscarAutores();
 
             //Imprimimos los autores - Solo algunos atributos....
             if (autores.isEmpty()) {
                 throw new ExcepcionLibreria("No existe autores para mostrar");
             } else {
-                for (Autor aux : autores) {
-                    System.out.println("*****************************************");
-                    System.out.println(aux.getId()+") "+ aux.getNombre());
+                Integer i = 0;
+                System.out.println("--------------LISTA DE AUTORES--------------");
+                for (Autor aux : autores) {                    
+                    System.out.println((i+1)+") "+ aux.getNombre());
+                    i++;
                 }
             }
         } catch (ExcepcionLibreria e) {
