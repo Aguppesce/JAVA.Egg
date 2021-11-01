@@ -41,35 +41,11 @@ public class EditorialService {
         }
     }
     
-    //C: mostrarAutores | A: imprimirAutores
-    public void imprimirEditoriales() throws ExcepcionLibreria {
-        try {
-            //Listamos los autores
-            List<Editorial> editoriales = daoEditorial.listaEditoriales();
-
-            //Imprimimos los autores - Solo algunos atributos....
-            if (editoriales.isEmpty()) {
-                throw new ExcepcionLibreria("No existe autores para mostrar");
-            } else {
-                for (Editorial aux : editoriales) {
-                    System.out.println("*****************************************");
-                    System.out.println(+aux.getId()+") " + aux.getNombre());
-                }
-            }
-        } catch (ExcepcionLibreria e) {
-            throw e;
-        }
-    }
-
-    public void imprimirUnaEditorial(String nombre) throws ExcepcionLibreria {
-        System.out.println(daoEditorial.buscarEditorialPorNombre(nombre));
-    }
-    
     public boolean validarEditorial(String nombreEditorial) throws ExcepcionLibreria {
         boolean validar = false;
         try {
-            List<Editorial> editoriales = daoEditorial.listaEditoriales();
-            for (Editorial aux : editoriales) {
+            List<Editorial> editoriales = daoEditorial.buscarEditoriales();
+            for (Editorial aux : editoriales) { 
                 if (aux.getNombre().equalsIgnoreCase(nombreEditorial)) {
                     throw new ExcepcionLibreria("Editorial ya registrada, ingrese otra");
                 }
@@ -79,7 +55,33 @@ public class EditorialService {
             throw e;
         }
         return validar;
-    }    
+    }
+    
+    //C: mostrarAutores | A: imprimirAutores
+    public void imprimirEditoriales() throws ExcepcionLibreria {
+        try {
+            //Listamos los autores
+            List<Editorial> editoriales = daoEditorial.buscarEditoriales();
+
+            //Imprimimos los autores - Solo algunos atributos....
+            if (editoriales.isEmpty()) {
+                throw new ExcepcionLibreria("No existe editoriales para mostrar");
+            } else {
+                Integer i = 0;
+                System.out.println("--------------LISTA DE EDITORIALES--------------");
+                for (Editorial aux : editoriales) {                    
+                    System.out.println((i+1)+") "+ aux.getNombre());
+                    i++;
+                }
+            }
+        } catch (ExcepcionLibreria e) {
+            throw e;
+        }
+    }
+
+    public void imprimirUnaEditorial(String nombre) throws ExcepcionLibreria {
+        System.out.println(daoEditorial.buscarEditorialPorNombre(nombre));
+    }  
 
     public void modificarEditorial(String nombre) throws ExcepcionLibreria {
         try {
@@ -114,19 +116,6 @@ public class EditorialService {
         }
     }
     
-    public Editorial buscarEditorialPorNombre(String nombre) throws Exception {
-        try {
-            //Validación
-            if (nombre == null || nombre.trim().isEmpty()) {
-                throw new Exception("Debe indicar un titulo");
-            }
-            Editorial editorial = daoEditorial.buscarEditorialPorNombre(nombre);
-            return editorial;
-        } catch (Exception e) {
-            throw e;
-        }
-    }
-
     public Editorial buscarEditorialPorId(Long id) throws ExcepcionLibreria {
         try {
             //Validación
@@ -136,6 +125,19 @@ public class EditorialService {
             Editorial editorial = daoEditorial.buscarEditorialPorId(id);
             return editorial;
         } catch (ExcepcionLibreria e) {
+            throw e;
+        }
+    }
+    
+    public Editorial buscarEditorialPorNombre(String nombre) throws Exception {
+        try {
+            //Validación
+            if (nombre == null || nombre.trim().isEmpty()) {
+                throw new Exception("Debe indicar un titulo");
+            }
+            Editorial editorial = daoEditorial.buscarEditorialPorNombre(nombre);
+            return editorial;
+        } catch (Exception e) {
             throw e;
         }
     }

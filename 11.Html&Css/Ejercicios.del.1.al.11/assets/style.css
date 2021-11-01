@@ -1,0 +1,137 @@
+.ej7{
+  background-color: black;
+}
+
+.h1ej7{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+.h2ej7{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color:chartreuse
+}
+
+.p1ej7{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  color: darkorange;
+}
+
+.p2ej7{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  color:bisque;
+}
+
+.aej8:link{
+  color: #CC0000;
+}
+
+.aej8:hover{
+  background-color: #CC0000;
+  color: #FFF;
+}
+
+.aej8:visited{
+  color: #CCC;
+}
+
+.olej9{
+  list-style-type: armenian;
+}
+
+.listej9{
+  text-align: center;
+  display: inline-block
+}
+
+.blockej9{
+  text-align: center;  
+}
+
+
+/* EJERCICIO 10 */
+#titulo{
+  color:darkcyan;
+}
+
+strong{
+  color:red;
+}
+
+.destacado{
+  color:lightsalmon;
+}
+
+#subtitulo{
+  color: blue;
+}
+
+.aej10{
+  color: red;
+}
+
+.emej10{
+  color:blue;
+}
+
+.thej10{
+  margin-left: 30%;
+  width: 500px;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.tiej10{
+  font-weight:bold;
+  color:darkorange;
+}
+
+.tfej10{
+  color: red;
+  font-weight: bold;
+}
+
+.contabej10{
+  color:green;
+}
+
+.otrospanej10{
+  color:darkorchid;
+}
+
+.otroaej10{
+  color:green;
+}
+.otrospanej10{
+  color:violet
+}
+/* FIN CSS EJERCICIO 10 */
+
+
+/* EJERCICIO 11 */
+
+.tableej11{  
+  margin-left: 40%;
+  text-align: center;
+  width: 350px;
+  height: 160px;
+  border: 1px solid #000;
+  border-collapse: collapse;  
+}
+
+.thej11{
+  border: 1px solid #000;
+  background-image: url(/assets/ejercicio11/imagenes/fondo_gris.gif);    
+}
+.th2ej11{  
+  border: 1px solid #000;
+  background-color: #E6F3FF;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+.td1ej11{
+  border: 1px solid #000;
+  background-color: #FFFFCC;
+}

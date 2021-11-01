@@ -44,7 +44,7 @@ public class EditorialDAO {
         Editorial editorial = em.find(Editorial.class, id);
         return editorial;
     }
-
+    
     //CONSULTA CON PARÁMETROS
     public Editorial buscarEditorialPorNombre(String nombre) throws ExcepcionLibreria {
         try {
@@ -57,7 +57,6 @@ public class EditorialDAO {
         } catch (Exception e) {
             throw new ExcepcionLibreria("Error el buscar editorial por nombre");
         }
-
     }
 
     public Editorial buscarUnaEditorial() throws ExcepcionLibreria {
@@ -65,21 +64,33 @@ public class EditorialDAO {
         return editorial;
     }
 
-    //CONSULTA SIN PARÁMETROS
-    public List<Editorial> listarEditoriales() throws ExcepcionLibreria {
-        List<Editorial> editoriales = em.createQuery("SELECT e FROM Editorial e").
-                getResultList();
-        return editoriales;
-    }
-    
-     //C: obtenerAutores -> List | A: listaAutores -> Collection
-    public List<Editorial> listaEditoriales() throws ExcepcionLibreria {
+    public List<Editorial> buscarEditoriales() throws ExcepcionLibreria { //listarLibros
         try {
-            List<Editorial> editoriales = listarEditoriales();
+            //Forma Completa
+            List<Editorial> editoriales = em.createQuery("SELECT e FROM Editorial e", Editorial.class).getResultList();
             return editoriales;
-        } catch (ExcepcionLibreria e) {
-            System.out.println(e.getMessage());
-            throw new ExcepcionLibreria("Error al obtener autores!");
+        } catch (Exception e) {
+            throw new ExcepcionLibreria("Error al buscar editoriales");
         }
     }
+    
+
 }
+
+//MÉTODOS ALTERNATIVOS
+//    //CONSULTA SIN PARÁMETROS
+//    public List<Editorial> listarEditoriales() throws ExcepcionLibreria {
+//        List<Editorial> editoriales = em.createQuery("SELECT e FROM Editorial e").
+//                getResultList();
+//        return editoriales;
+//    }
+//     //C: obtenerAutores -> List | A: listaAutores -> Collection
+//    public List<Editorial> listaEditoriales() throws ExcepcionLibreria {
+//        try {
+//            List<Editorial> editoriales = listarEditoriales();
+//            return editoriales;
+//        } catch (ExcepcionLibreria e) {
+//            System.out.println(e.getMessage());
+//            throw new ExcepcionLibreria("Error al obtener autores!");
+//        }
+//    }

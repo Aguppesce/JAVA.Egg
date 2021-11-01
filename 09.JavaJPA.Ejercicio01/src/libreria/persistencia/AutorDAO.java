@@ -58,9 +58,7 @@ public class AutorDAO {
     public Autor buscarUnAutor() throws ExcepcionLibreria {
         Autor autor = (Autor) em.createQuery("SELECT a FROM Autor a").getSingleResult();
         return autor;
-    }
-
-    
+    }   
     
     public List<Autor> buscarAutores() throws ExcepcionLibreria { //listarLibros
         try {
