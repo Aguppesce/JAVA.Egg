@@ -29,13 +29,13 @@ public class UsuarioServicio implements UserDetailsService{
     @Autowired
     private FotoServicio fotoServicio;
     
-    @Autowired
-    private NotificacionServicio notificacionServicio;
+    //@Autowired
+    //private NotificacionServicio notificacionServicio;
     
     @Transactional
-    public void registrar(MultipartFile archivo, String nombre, String apellido, String mail, String clave) throws MiExcepcion{
+    public void registrar(MultipartFile archivo, String nombre, String apellido, String mail, String clave, String clave2) throws MiExcepcion{
         
-        validar(nombre, apellido, mail, clave);
+        validar(nombre, apellido, mail, clave, clave2);
         
         Usuario usuario = new Usuario();
         usuario.setNombre(nombre);
@@ -52,13 +52,13 @@ public class UsuarioServicio implements UserDetailsService{
         
         usuarioRepositorio.save(usuario);
         
-        notificacionServicio.enviar("Bienvenidos al Tinder de mascota!", "Tinder de Mesacota", usuario.getMail());
+        //notificacionServicio.enviar("Bienvenidos al Tinder de mascota!", "Tinder de Mesacota", usuario.getMail());
     }
     
     @Transactional
-    public void modificar(MultipartFile archivo, String id, String nombre, String apellido, String mail, String clave) throws MiExcepcion{
+    public void modificar(MultipartFile archivo, String id, String nombre, String apellido, String mail, String clave, String clave2) throws MiExcepcion{
         
-        validar(nombre, apellido, mail, clave);
+        validar(nombre, apellido, mail, clave, clave2);
         
         Optional<Usuario> respuesta = usuarioRepositorio.findById(id);
         if(respuesta.isPresent()){
@@ -108,7 +108,7 @@ public class UsuarioServicio implements UserDetailsService{
         }
     }
     
-    public void validar(String nombre, String apellido, String mail, String clave) throws MiExcepcion {
+    public void validar(String nombre, String apellido, String mail, String clave, String clave2) throws MiExcepcion {
         if(nombre == null || nombre.isEmpty()){
             throw new MiExcepcion("El nombre del usuario no puede ser nulo.");
         }
@@ -121,6 +121,9 @@ public class UsuarioServicio implements UserDetailsService{
         if(clave == null || clave.isEmpty() || clave.length() <= 6){
             throw new MiExcepcion("La clave del usuario no puede ser nula y tiene que tener más de 6 dígitos.");
         }
+        if(clave.equals(clave2)){
+            throw new MiExcepcion("Las claves deben ser iguales.");
+        }        
     }
 
     @Override

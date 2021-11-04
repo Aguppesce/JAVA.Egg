@@ -1,9 +1,10 @@
 package com.springboot.ejercicio01.entidades;
 
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
@@ -22,11 +23,11 @@ public class Libro {
     private Integer ejemplaresRestantes;
     private Boolean alta;
     
-    @OneToOne    
-    private Autor autor;
-    
-    @OneToOne
-    private Editorial editorial;
+    @OneToMany(mappedBy = "libro")
+    private List<Autor> autores;
+        
+    @OneToMany(mappedBy = "libro")
+    private List<Editorial> editoriales;
 
     /**
      * @return the id
@@ -141,32 +142,32 @@ public class Libro {
     }
 
     /**
-     * @return the autor
+     * @return the autores
      */
-    public Autor getAutor() {
-        return autor;
+    public List<Autor> getAutores() {
+        return autores;
     }
 
     /**
-     * @param autor the autor to set
+     * @param autores the autores to set
      */
-    public void setAutor(Autor autor) {
-        this.autor = autor;
+    public void setAutores(List<Autor> autores) {
+        this.autores = autores;
     }
 
     /**
-     * @return the editorial
+     * @return the editoriales
      */
-    public Editorial getEditorial() {
-        return editorial;
+    public List<Editorial> getEditoriales() {
+        return editoriales;
     }
 
     /**
-     * @param editorial the editorial to set
+     * @param editoriales the editoriales to set
      */
-    public void setEditorial(Editorial editorial) {
-        this.editorial = editorial;
+    public void setEditoriales(List<Editorial> editoriales) {
+        this.editoriales = editoriales;
     }
-    
+
     
 }

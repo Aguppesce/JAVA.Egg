@@ -13,8 +13,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class VotoServicio {
-    @Autowired
-    private NotificacionServicio notificacionServicio;
+//    @Autowired
+//    private NotificacionServicio notificacionServicio;
     
     @Autowired
     private VotoRepositorio votoRepositorio;
@@ -47,7 +47,7 @@ public class VotoServicio {
             Mascota mascota2 = respuesta2.get();
             voto.setMascota2(mascota2);
             
-            notificacionServicio.enviar("Tu mascota ha sido votada", "Tinder de Mascota", mascota2.getUsuario().getMail());
+            //notificacionServicio.enviar("Tu mascota ha sido votada", "Tinder de Mascota", mascota2.getUsuario().getMail());
         } else {
             throw new MiExcepcion("No existe una mascota vinculada a ese identificador.");
         }
@@ -62,7 +62,7 @@ public class VotoServicio {
             voto.setRespuesta(new Date());
             
             if(voto.getMascota2().getUsuario().getId().equals(idUsuario)){
-                notificacionServicio.enviar("Tu voto fue correspondido", "Tinder de Mascota", voto.getMascota1().getUsuario().getMail());
+                //notificacionServicio.enviar("Tu voto fue correspondido", "Tinder de Mascota", voto.getMascota1().getUsuario().getMail());
                 votoRepositorio.save(voto);
             } else {
                 throw new MiExcepcion("No tiene permiso para realizar la operación.");
