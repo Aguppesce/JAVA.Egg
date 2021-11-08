@@ -34,19 +34,20 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Salir</a>
+            <a class="nav-link" href="/logout">Salir</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
+  
   <header class="masthead text-center text-white">
     <div class="masthead-content">
       <div class="container">
         <h1 class="masthead-heading mb-0">Usuario Logueado</h1>
-        <!-- <h2 class="masthead-subheading mb-0" th:if="${session.usuariosession != null}" th:text="${session.usuariosession.nombre + ' ' + session.usuariosession.apellido}"></h2> -->
-        <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">¡Configura tu Perfil!</a>
+        <h2 class="masthead-subheading mb-0" th:if="${session.usuariosession != null}" th:text="${session.usuariosession.nombre + ' ' + session.usuariosession.apellido}">Hola Usuario!</h2>
+        <a th:href="@{/usuario/editar-perfil(id=__${session.usuariosession.id}__)}" class="btn btn-primary btn-xl rounded-pill mt-5">¡Configura tu perfil!</a>
+        <a th:href="@{/mascota/editar-perfil}" class="btn btn-primary btn-xl rounded-pill mt-5">¡Agrega una Mascota!</a>
       </div>
     </div>
     <div class="bg-circle-1 bg-circle"></div>
@@ -54,7 +55,8 @@
     <div class="bg-circle-3 bg-circle"></div>
     <div class="bg-circle-4 bg-circle"></div>
   </header>
-
+    
+  
 
   <!-- Footer -->
   <footer class="py-5 bg-black">

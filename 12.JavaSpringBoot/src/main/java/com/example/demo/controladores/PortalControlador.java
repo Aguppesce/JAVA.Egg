@@ -6,6 +6,7 @@ import com.example.demo.repositorios.ZonaRepositorio;
 import com.example.demo.servicios.UsuarioServicio;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,13 +24,26 @@ public class PortalControlador {
     
     @Autowired
     private ZonaRepositorio zonaRepositorio;
+    
     @GetMapping("/")
     public String index() {
         return "index.html";
     }
 
+    @PreAuthorize("hasAnyRole('ROLE_USUARIO_REGISTRADO')")
+    @GetMapping("/inicio")
+    public String inicio() {
+        return "inicio.html";
+    }
+    
     @GetMapping("/login")
-    public String loign() {
+    public String login(@RequestParam(required = false) String error, @RequestParam(required = false) String logout, ModelMap model) {
+        if(error !=null){
+            model.put("error", "Nombre de usuario o clave incorrectos");            
+        }
+        if(logout != null){
+            model.put("logout", "Ha salido correctamente de la plataforma.");
+        }
         return "login.html";
     }
 
@@ -41,15 +55,18 @@ public class PortalControlador {
     }
 
     @PostMapping("/registrar")
-    public String registrar(ModelMap modelo, MultipartFile archivo, @RequestParam String nombre, @RequestParam String apellido, @RequestParam String mail, @RequestParam String clave1, @RequestParam String clave2) throws MiExcepcion {
+    public String registrar(ModelMap modelo, MultipartFile archivo, @RequestParam String nombre, @RequestParam String apellido, @RequestParam String mail, @RequestParam String clave1, @RequestParam String clave2, @RequestParam String idZona) throws MiExcepcion {
         try{            
-            usuarioServicio.registrar(archivo, nombre, apellido, mail, clave1, clave2);
+            usuarioServicio.registrar(archivo, nombre, apellido, mail, clave1, clave2, idZona);
         }catch(MiExcepcion e){
+            List<Zona> zonas = zonaRepositorio.findAll();
+            modelo.put("zonas", zonas);
+            
             modelo.put("error", e.getMessage());            
             modelo.put("nombre", nombre);
             modelo.put("apellido", apellido);
             modelo.put("mail" ,mail);
-            modelo.put("calve1" ,clave1);
+            modelo.put("clave1" ,clave1);
             modelo.put("clave2" ,clave2);
             
             return "registro.html";

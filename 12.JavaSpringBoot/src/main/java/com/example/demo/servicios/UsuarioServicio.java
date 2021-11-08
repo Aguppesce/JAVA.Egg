@@ -2,12 +2,15 @@ package com.example.demo.servicios;
 
 import com.example.demo.entidades.Foto;
 import com.example.demo.entidades.Usuario;
+import com.example.demo.entidades.Zona;
 import com.example.demo.excepciones.MiExcepcion;
 import com.example.demo.repositorios.UsuarioRepositorio;
+import com.example.demo.repositorios.ZonaRepositorio;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import javax.servlet.http.HttpSession;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -18,6 +21,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
@@ -26,21 +31,27 @@ public class UsuarioServicio implements UserDetailsService{
     @Autowired
     private UsuarioRepositorio usuarioRepositorio;
     
-    @Autowired
-    private FotoServicio fotoServicio;
-    
     //@Autowired
     //private NotificacionServicio notificacionServicio;
     
+    @Autowired
+    private ZonaRepositorio zonaRepositorio; 
+    
+    @Autowired
+    private FotoServicio fotoServicio;
+    
     @Transactional
-    public void registrar(MultipartFile archivo, String nombre, String apellido, String mail, String clave, String clave2) throws MiExcepcion{
+    public void registrar(MultipartFile archivo, String nombre, String apellido, String mail, String clave, String clave2, String idZona) throws MiExcepcion{
         
-        validar(nombre, apellido, mail, clave, clave2);
+        Zona zona = zonaRepositorio.getOne(idZona);
         
+        validar(nombre, apellido, mail, clave, clave2, zona);                
+               
         Usuario usuario = new Usuario();
         usuario.setNombre(nombre);
         usuario.setApellido(apellido);
         usuario.setMail(mail);
+        usuario.setZona(zona);
         
         String encriptada = new BCryptPasswordEncoder().encode(clave);
         usuario.setClave(encriptada);
@@ -56,9 +67,11 @@ public class UsuarioServicio implements UserDetailsService{
     }
     
     @Transactional
-    public void modificar(MultipartFile archivo, String id, String nombre, String apellido, String mail, String clave, String clave2) throws MiExcepcion{
+    public void modificar(MultipartFile archivo, String id, String nombre, String apellido, String mail, String clave, String clave2, String idZona) throws MiExcepcion{
         
-        validar(nombre, apellido, mail, clave, clave2);
+        Zona zona = zonaRepositorio.getOne(idZona);
+        
+        validar(nombre, apellido, mail, clave, clave2, zona);                
         
         Optional<Usuario> respuesta = usuarioRepositorio.findById(id);
         if(respuesta.isPresent()){
@@ -66,6 +79,7 @@ public class UsuarioServicio implements UserDetailsService{
             usuario.setApellido(apellido);
             usuario.setNombre(nombre);
             usuario.setMail(mail);
+            usuario.setZona(zona);
             
             String encriptada = new BCryptPasswordEncoder().encode(clave);
             usuario.setClave(encriptada);
@@ -108,7 +122,7 @@ public class UsuarioServicio implements UserDetailsService{
         }
     }
     
-    public void validar(String nombre, String apellido, String mail, String clave, String clave2) throws MiExcepcion {
+    public void validar(String nombre, String apellido, String mail, String clave, String clave2, Zona zona) throws MiExcepcion {
         if(nombre == null || nombre.isEmpty()){
             throw new MiExcepcion("El nombre del usuario no puede ser nulo.");
         }
@@ -121,9 +135,12 @@ public class UsuarioServicio implements UserDetailsService{
         if(clave == null || clave.isEmpty() || clave.length() <= 6){
             throw new MiExcepcion("La clave del usuario no puede ser nula y tiene que tener más de 6 dígitos.");
         }
-        if(clave.equals(clave2)){
+        if(!clave.equals(clave2)){
             throw new MiExcepcion("Las claves deben ser iguales.");
         }        
+        if(zona == null) {
+            throw new MiExcepcion("No se encontró la zona solicitada");
+        }
     }
 
     @Override
@@ -133,14 +150,12 @@ public class UsuarioServicio implements UserDetailsService{
             
             List<GrantedAuthority> permisos = new ArrayList<>();
             
-            GrantedAuthority p1 = new SimpleGrantedAuthority("MODULO FOTOS");
+            GrantedAuthority p1 = new SimpleGrantedAuthority("ROLE_USUARIO_REGISTRADO");
             permisos.add(p1);
             
-            GrantedAuthority p2 = new SimpleGrantedAuthority("MODULO MASCOTAS");
-            permisos.add(p2);
-            
-            GrantedAuthority p3 = new SimpleGrantedAuthority("MODULO VOTOS");
-            permisos.add(p3);
+            ServletRequestAttributes attr = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
+            HttpSession session = attr.getRequest().getSession(true);
+            session.setAttribute("usuariosession", usuario);
             
             User user = new User(usuario.getMail(), usuario.getClave(), permisos);
             return user;
@@ -148,4 +163,9 @@ public class UsuarioServicio implements UserDetailsService{
             return null;
         }
     }
+    
+    public Usuario buscarPorId(String id) throws MiExcepcion{
+	return usuarioRepositorio.getOne(id);
+    }
+    
 }

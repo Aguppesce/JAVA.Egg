@@ -1,6 +1,7 @@
 package com.example.demo.entidades;
 
 import com.example.demo.enumeracion.Sexo;
+import com.example.demo.enumeracion.Tipo;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -34,6 +35,9 @@ public class Mascota {
     
     @Enumerated(EnumType.STRING)
     private Sexo sexo;
+    
+    @Enumerated(EnumType.STRING)
+    private Tipo tipo;
     
     @OneToOne
     private Foto foto;
@@ -136,5 +140,12 @@ public class Mascota {
         this.foto = foto;
     }
     
+    public Tipo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
+    }
     
 }
