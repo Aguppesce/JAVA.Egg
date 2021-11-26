@@ -9,6 +9,7 @@ import com.example.demo.excepciones.MiExcepcion;
 import com.example.demo.repositorios.MascotaRepositorio;
 import com.example.demo.repositorios.UsuarioRepositorio;
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,14 +29,15 @@ public class MascotaServicio {
     private FotoServicio fotoServicio;
     
     @Transactional
-    public void agregarMascota(MultipartFile archivo, String idUsuario, String nombre, Sexo sexo, Tipo tipo ) throws MiExcepcion{
+    public void agregarMascota(MultipartFile archivo, String idUsuario, String nombre, Sexo sexo, Tipo tipo) throws MiExcepcion{
         
         Usuario usuario = usuarioRepositorio.findById(idUsuario).get();
         
         validar(nombre, sexo);
         
         Mascota mascota = new Mascota();
-        mascota.setNombre(nombre); 
+        mascota.setNombre(nombre);
+        mascota.setUsuario(usuario);
         mascota.setSexo(sexo);
         mascota.setAlta(new Date());
         mascota.setTipo(tipo);
@@ -106,5 +108,9 @@ public class MascotaServicio {
         } else {
             throw new MiExcepcion("La mascota solicitada no existe.");
         }       
+    }
+    
+    public List<Mascota> buscarPorUsuario(String id){
+        return mascotaRepositorio.buscarMascotasPorUsuario(id);
     }
 }

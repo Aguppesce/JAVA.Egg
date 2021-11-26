@@ -1,15 +1,12 @@
 package com.example.demo.entidades;
 
 import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.*;
+
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
+@Table(name = "voto")
 public class Voto {
     
     @Id

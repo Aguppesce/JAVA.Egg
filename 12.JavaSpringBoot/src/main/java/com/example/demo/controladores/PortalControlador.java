@@ -37,13 +37,17 @@ public class PortalControlador {
     }
     
     @GetMapping("/login")
-    public String login(@RequestParam(required = false) String error, @RequestParam(required = false) String logout, ModelMap model) {
-        if(error !=null){
-            model.put("error", "Nombre de usuario o clave incorrectos");            
-        }
+    public String login(@RequestParam(required = false) String error, @RequestParam(required = false) String logout, ModelMap modelo) {
+        
         if(logout != null){
-            model.put("logout", "Ha salido correctamente de la plataforma.");
+            modelo.put("logout", "Ha salido correctamente de la plataforma.");
+            System.out.println("Ha salido de la plataforma!");
         }
+        
+        if(error !=null){
+            modelo.put("error", "Nombre de usuario o clave incorrectos");            
+        }
+        
         return "login.html";
     }
 
@@ -59,6 +63,7 @@ public class PortalControlador {
         try{            
             usuarioServicio.registrar(archivo, nombre, apellido, mail, clave1, clave2, idZona);
         }catch(MiExcepcion e){
+
             List<Zona> zonas = zonaRepositorio.findAll();
             modelo.put("zonas", zonas);
             

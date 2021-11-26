@@ -11,8 +11,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @SpringBootApplication
 public class JavaSpringBootApplication extends WebSecurityConfigurerAdapter {
 
-        @Autowired
-        private UsuarioServicio usuarioServicio;
+    @Autowired
+    private UsuarioServicio usuarioServicio;
         
 	public static void main(String[] args) {
 		SpringApplication.run(JavaSpringBootApplication.class, args);

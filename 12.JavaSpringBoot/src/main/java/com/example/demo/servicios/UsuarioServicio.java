@@ -165,7 +165,12 @@ public class UsuarioServicio implements UserDetailsService{
     }
     
     public Usuario buscarPorId(String id) throws MiExcepcion{
-	return usuarioRepositorio.getOne(id);
+	Optional<Usuario> respuesta = usuarioRepositorio.findById(id);
+        if(respuesta.isPresent()){
+            return respuesta.get();
+        } else {
+            throw new MiExcepcion("El usuario solicitado no existe");
+        }
     }
-    
+
 }
