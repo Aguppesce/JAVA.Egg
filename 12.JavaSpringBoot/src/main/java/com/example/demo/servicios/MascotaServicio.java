@@ -37,7 +37,7 @@ public class MascotaServicio {
         
         Mascota mascota = new Mascota();
         mascota.setNombre(nombre);
-        mascota.setUsuario(usuario);
+        mascota.setUsuario(usuario); //corregido
         mascota.setSexo(sexo);
         mascota.setAlta(new Date());
         mascota.setTipo(tipo);

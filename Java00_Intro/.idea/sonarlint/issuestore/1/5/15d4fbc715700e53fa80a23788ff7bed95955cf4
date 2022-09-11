@@ -1,0 +1,19 @@
+
+e
+java:S1192*"JDefine a constant instead of duplicating this literal "Existen [" 5 times.(¤—å‚úÿÿÿÿ
+b	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ü²‘Î
+0
+java:S1220""Move this file to a named package.
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘
+X
+java:S1659"BDeclare "cont1" and all following declarations on a separate line.(ÕõøÌ
+D
+java:S1481")Remove this unused "flag" local variable.(ŸÿáÑÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(½öŸÍ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(¤—å‚úÿÿÿÿ
+Q	java:S1250"<This block of commented-out lines of code should be removed.(•©Ñ
+Q	java:S1259"<This block of commented-out lines of code should be removed.(ÕöÔô
+H
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ

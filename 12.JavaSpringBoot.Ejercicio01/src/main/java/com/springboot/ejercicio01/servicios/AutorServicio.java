@@ -25,7 +25,6 @@ public class AutorServicio {
         }
         
         autor.setNombre(nombre);
-        
         autorRepositorio.save(autor);
         
         return autor;

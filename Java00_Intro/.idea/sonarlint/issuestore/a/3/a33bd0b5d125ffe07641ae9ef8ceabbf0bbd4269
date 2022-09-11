@@ -1,0 +1,20 @@
+
+g	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(â£ğìıÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+e
+java:S1659"CDeclare "buscar" and all following declarations on a separate line.(´ú…³ÿÿÿÿÿ8ìËÉÖ²0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(½öŸÍ8ñËÉÖ²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8øËÉÖ²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ñ¡ÁÏşÿÿÿÿ8ùËÉÖ²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8úËÉÖ²0
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(È¸áÀùÿÿÿÿ8üËÉÖ²0
+D
+java:S1125'"'Remove the unnecessary boolean literal.(ûÅŸ8ÿËÉÖ²0
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(¼ìß†ùÿÿÿÿ8ŠÌÉÖ²0
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(Â¨¯8ŒÌÉÖ²0
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8ŒÌÉÖ²0
+U	java:S106."9Replace this use of System.out or System.err by a logger.(Ñ–ÑÃ8ÌÉÖ²0
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(“÷®ÿÿÿÿÿ8ÌÉÖ²0
+Q	java:S1258"<This block of commented-out lines of code should be removed.(Çµí‘

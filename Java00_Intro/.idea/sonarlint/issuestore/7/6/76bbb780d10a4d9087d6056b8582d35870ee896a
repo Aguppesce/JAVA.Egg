@@ -1,0 +1,21 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ºÖ÷Î
+R
+java:S4973'"<Strings and Boxed types should be compared using "equals()".(³€Ã‘
+0
+java:S1220""Move this file to a named package.
+N	java:S106"9Replace this use of System.out or System.err by a logger.(«§³Ä
+S	java:S106"9Replace this use of System.out or System.err by a logger.(úõ¶Øúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(†ËæÂúÿÿÿÿ
+M	java:S106 "9Replace this use of System.out or System.err by a logger.(–Ô£$
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(¸õÎŽ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(àÝâ£
+S	java:S106."9Replace this use of System.out or System.err by a logger.(¿ÍÓýÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(ò‰«úúÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(æ…¨Âøÿÿÿÿ
+M
+java:S61264"2Replace this String concatenation with Text block.(æ…¨Âøÿÿÿÿ
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(Áð±…
+]	java:S125?"<This block of commented-out lines of code should be removed.(´äºÜýÿÿÿÿ8Ï¨¥Ö²0
+X	java:S125H"<This block of commented-out lines of code should be removed.(œû¿Ø8Ö¨¥Ö²0
+^	java:S125œ"<This block of commented-out lines of code should be removed.(Ö”Äãùÿÿÿÿ8Û¨¥Ö²0

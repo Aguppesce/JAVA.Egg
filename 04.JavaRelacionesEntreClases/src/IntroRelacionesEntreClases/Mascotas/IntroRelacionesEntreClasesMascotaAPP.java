@@ -5,9 +5,8 @@ import IntroRelacionesEntreClases.Mascotas.entidades.Usuario;
 import IntroRelacionesEntreClases.Mascotas.enumeraciones.RazaGatuna;
 import IntroRelacionesEntreClases.Mascotas.enumeraciones.RazaPerruna;
 import IntroRelacionesEntreClases.Mascotas.enumeraciones.SexoHumano;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+
+import java.util.*;
 
 /**
  *
@@ -16,25 +15,36 @@ import java.util.List;
 public class IntroRelacionesEntreClasesMascotaAPP {
     public static void main(String[] args) {
         
-        Mascota m1 = new Mascota("Fer", "Chiquito", "Perro");
-        Mascota m2 = new Mascota("Pepa", "Filomena", "Perro");        
-        
-        List<Mascota> mascotas = new ArrayList();
-        mascotas.add(m1);
-        mascotas.add(m2);
-        
-        Usuario u = new Usuario();
-        
-        u.setApellido("Fiorde");
-        u.setSexo(SexoHumano.HOMBRE);
-        u.setNacimiento(new Date("01/11/1991"));
-        
-        u.setMascotaFavorita(m1);
-        
-        u.setMascotas(mascotas);
-        
-        System.out.println(u.toString());
-        
+        //Mascota m1 = new Mascota("Fer", "Chiquito", "Perro");
+        //Mascota m2 = new Mascota("Pepa", "Filomena", "Perro");
+        //
+        //List<Mascota> mascotas = new ArrayList();
+        //mascotas.add(m1);
+        //mascotas.add(m2);
+        //
+        //Usuario u = new Usuario();
+        //
+        //u.setApellido("Fiorde");
+        //u.setSexo(SexoHumano.HOMBRE);
+        //u.setNacimiento(new Date("01/11/1991"));
+        //
+        //u.setMascotaFavorita(m1);
+        //
+        //u.setMascotas(mascotas);
+
+        //System.out.println(u.toString());
+
+        String f, myPhoto;
+        String[] fileSplitted;
+
+        f="C:/Windows/System32/drivers/etc/hosts";
+        fileSplitted=f.split("\\/");
+        myPhoto = fileSplitted[fileSplitted.length-1];
+        for (String aux: fileSplitted) {
+            System.out.println(aux);
+        }
+
+
 //        
 //        Mascota m1 = new Mascota<RazaPerruna>("Fer", "Chiquito", "Perro");
 //        m1.setRaza(RazaPerruna.BEAGLE);        
@@ -71,5 +81,5 @@ public class IntroRelacionesEntreClasesMascotaAPP {
 //            System.out.println(aux.name());//muestra todos los nombres de las razas que tiene el enum
 //        }
     }
-    
+
 }

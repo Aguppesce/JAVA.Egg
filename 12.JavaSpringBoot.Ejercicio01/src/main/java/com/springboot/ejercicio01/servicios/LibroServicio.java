@@ -29,6 +29,7 @@ public class LibroServicio {
     @Transactional
     public void crearLibro(String isbn, String titulo, Integer anio, Integer ejemplares, Integer ejemplaresPrestados, Integer ejemplaresRestantes, String autor, String editorial) throws MiExcepcion{
 
+        //Valido el modelo de Libro recibido y lo devuelvo ya como un objeto Libro mediante el método validar
         validarLibro(isbn, titulo, anio, ejemplares, ejemplaresPrestados, ejemplaresRestantes);
 
         Libro libro = new Libro();
@@ -46,7 +47,6 @@ public class LibroServicio {
         libro.setEditorial(nuevaEditorial);
 
         libroRepositorio.save(libro);
-
     }
 
     @Transactional

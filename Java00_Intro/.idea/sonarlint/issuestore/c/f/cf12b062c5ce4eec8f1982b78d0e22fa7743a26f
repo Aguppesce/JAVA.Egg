@@ -1,0 +1,28 @@
+
+„
+java:S1192"bDefine a constant instead of duplicating this literal "Ingrese un nÃºmero entre 1 y 20: " 4 times.(§áÍûÿÿÿÿ8­÷ˆÖ²0
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÜŞY
+0
+java:S1220""Move this file to a named package.
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Çµí‘8‰Ú‚Ö²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(§áÍûÿÿÿÿ8‘Ú‚Ö²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¬ñé‡şÿÿÿÿ8ÛûˆÖ²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ8ÛûˆÖ²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8ÛûˆÖ²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(§áÍûÿÿÿÿ8ÛûˆÖ²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¬ñé‡şÿÿÿÿ8ãûˆÖ²0
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ8èûˆÖ²0
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8êûˆÖ²0
+B
+java:S3457$"%String contains no format specifiers.(”î¼™8êûˆÖ²0
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(”î¼™8êûˆÖ²0
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(¬ñé‡şÿÿÿÿ8êûˆÖ²0
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ8êûˆÖ²0
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8’üˆÖ²0
+B
+java:S3457-"%String contains no format specifiers.(”î¼™8’üˆÖ²0
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(”î¼™8’üˆÖ²0
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(¬ñé‡şÿÿÿÿ8’üˆÖ²0
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(‹µ‹¶ıÿÿÿÿ8–üˆÖ²0
+]	java:S125;"<This block of commented-out lines of code should be removed.(§¢û˜ùÿÿÿÿ8¥Ú‚Ö²0

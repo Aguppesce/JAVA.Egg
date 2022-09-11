@@ -21,15 +21,16 @@ public class LibroControlador {
     @Autowired
     private LibroServicio libroServicio;
 
-    @PostMapping("/registrar")
+    @PostMapping("/registrarLibro")
     public String registrarLibro(ModelMap modelo, @RequestParam String isbn, @RequestParam String titulo, @RequestParam Integer anio, @RequestParam Integer ejemplares, @RequestParam Integer ejemplaresPrestados, @RequestParam Integer ejemplaresRestantes, @RequestParam String autor, @RequestParam String editorial){
+
         try{
 
             libroServicio.crearLibro(isbn, titulo, anio, ejemplares, ejemplaresPrestados, ejemplaresRestantes, autor, editorial);
 
         }catch(MiExcepcion e){
 
-            //modelo.put("error", e.getMessage());
+            modelo.put("error", e.getMessage());
             modelo.put("isbn", isbn);
             modelo.put("titulo",titulo);
             modelo.put("anio", anio);
@@ -39,11 +40,11 @@ public class LibroControlador {
             modelo.put("autor", autor);
             modelo.put("editorial", editorial);
 
-            //return "registro.html";
+            return "registroLibro.html";
         }
-        //modelo.put("mensaje", "Tu libro fue registrado exitosamente!.");
+        modelo.put("mensaje", "Tu libro fue registrado exitosamente!.");
 
-        return "registro.html";
+        return "registroLibro.html";
     }
 
     @GetMapping("/editar")
@@ -55,7 +56,7 @@ public class LibroControlador {
         } catch (MiExcepcion e){
 
         }
-        return "redirect:/registro.html";
+        return "redirect:/registroLibro.html";
     }
 
     @GetMapping("/mis-libros")
