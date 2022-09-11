@@ -1,13 +1,13 @@
 /**
- *
- * @Agu
+ * @autor Aguppesce
  */
-package JavaIntro;
+
+//Ejercicio 15: Realizar un programa que pida dos números enteros positivos por teclado y muestre por pantalla el siguiente menú: 1) Sumar, 2) Restar, 3) Multiplicar, 4) Dividir, 5) Salir. Elija opción
+//El usuario deberá elegir una opción y el programa deberá mostrar el resultado por pantalla y luego volver al menú. El programa deberá ejecutarse hasta que se elija la opción 5. Tener en cuenta que, si el usuario selecciona la opción 5, en vez de salir del programa directamente, se debe mostrar el siguiente mensaje de confirmación: ¿Está seguro que desea salir del programa (S/N)? Si el usuario selecciona el carácter ‘S’ se sale del programa, caso contrario se vuelve a mostrar el menú.
 
 import java.util.Scanner;
 
-public class Ejercicio15 {
-
+public class Java15_EjercicioBucles_SentenciasDeSalto_Break_Continue {
     public static void main(String[] args) {
         int num1, num2, seleccion;
         char valSalida;
@@ -88,7 +88,8 @@ public class Ejercicio15 {
     }
 }
 
-//public class Ejercicio15 {
+//OTRA SOLUCIÓN
+//public class Java15_EjercicioBucles_SentenciasDeSalto_Break_Continue {
 //
 //    public static void main(String[] args) {
 //        int num1, num2,opcion;
@@ -98,7 +99,7 @@ public class Ejercicio15 {
 //        System.out.print("Ingrese número 1: ");
 //        num1 = leer.nextInt();
 //        System.out.print("Ingrese número 2: ");
-//        num2 = leer.nextInt();       
+//        num2 = leer.nextInt();
 //        do {
 //            System.out.print("\n\nElija opción: ");
 //            System.out.println("    MENU");
@@ -117,18 +118,17 @@ public class Ejercicio15 {
 //                    break;
 //                case 4: System.out.println("La división es: "+(num1/num2));
 //                    break;
-//                case 5: System.out.println("¿Está seguro que desea salir del programa (S/N)?: ");                
+//                case 5: System.out.println("¿Está seguro que desea salir del programa (S/N)?: ");
 //                        opc = leer.next();
 //                        if(opc.equals("S") || opc.equals("s")){
 //                            break;
 //                        }else{
 //                            if(opc.equals("N") || opc.equals("n")){
-//                                System.out.println("Elija opción: ");                                
+//                                System.out.println("Elija opción: ");
 //                                opcion = leer.nextInt();
-//                            }                            
-//                        }                   
-//            }       
+//                            }
+//                        }
+//            }
 //        }while(opcion!=5);
 //    }
 //}
-
