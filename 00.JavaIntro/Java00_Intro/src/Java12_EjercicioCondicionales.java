@@ -1,23 +1,40 @@
 /**
  * @autor Aguppesce
- * */
+ */
 
-//Ejercicio 11: Escriba un programa que pida una frase o palabra y valide si la primera letra de esa frase es una ‘A’. Si la primera letra es una ‘A’, se deberá de imprimir un mensaje por pantalla que diga “CORRECTO”, en caso contrario, se deberá imprimir “INCORRECTO”. Nota: investigar la función Substring y equals() de Java.
+//Ejercicio 12: Considera que estás desarrollando una web para una empresa que fabrica motores (suponemos que se trata del tipo de motor de una bomba para mover fluidos). Definir una variable tipoMotor y permitir que el usuario ingrese un valor entre 1 y 4. El programa debe mostrar lo siguiente:
+// Si el tipo de motor es 1, mostrar un mensaje indicando “La bomba es una bomba de agua”.
+// Si el tipo de motor es 2, mostrar un mensaje indicando “La bomba es una bomba de gasolina”.
+// Si el tipo de motor es 3, mostrar un mensaje indicando “La bomba es una
+//bomba de hormigón”.
+// Si el tipo de motor es 4, mostrar un mensaje indicando “La bomba es una
+//bomba de pasta alimenticia”.
+// Si no se cumple ninguno de los valores anteriores mostrar el mensaje “No existe un valor válido para tipo de bomba”
 
 import java.util.Scanner;
 
-public class Java11_EjercicioCondicionales {
+public class Java12_EjercicioCondicionales {
     public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
 
-        Scanner leer=new Scanner(System.in);
+        System.out.print("Ingrese una opción entre 1 y 4: ");
+        int tipoMotor = leer.nextInt();
 
-        System.out.print("Ingrese una palabra o frase: ");
-        String var1 = leer.nextLine();
-
-        if(var1.substring(0,1).equals("A")){
-            System.out.print("Correcto! \n");
-        }else{
-            System.out.print("Incorrecto!\n");
+        switch (tipoMotor) {
+            case 1:
+                System.out.println("La bomba es una bomba de agua");
+                break;
+            case 2:
+                System.out.println("La bomba es una bomba de gasolina");
+                break;
+            case 3:
+                System.out.println("La bomba es una bomba de hormigón");
+                break;
+            case 4:
+                System.out.println("La bomba es una bomba de alimenticia");
+                break;
+            default:
+                System.out.println("No existe un valor válido para este tipo de bomba");
         }
     }
 }

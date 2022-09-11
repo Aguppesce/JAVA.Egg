@@ -2,19 +2,19 @@
  * @autor Aguppesce
  * */
 
-//Ejercicio 10: Realizar un programa que solo permita introducir solo frases o palabras de 8 de largo. Si el usuario ingresa una frase o palabra de 8 de largo se deberá de imprimir un mensaje por pantalla que diga “CORRECTO”, en caso contrario, se deberá imprimir “INCORRECTO”. Nota: investigar la función Lenght() en Java.
+//Ejercicio 11: Escriba un programa que pida una frase o palabra y valide si la primera letra de esa frase es una ‘A’. Si la primera letra es una ‘A’, se deberá de imprimir un mensaje por pantalla que diga “CORRECTO”, en caso contrario, se deberá imprimir “INCORRECTO”. Nota: investigar la función Substring y equals() de Java.
 
 import java.util.Scanner;
 
-public class Java10_EjercicioCondicionales {
+public class Java11_EjercicioCondicionales {
     public static void main(String[] args) {
 
         Scanner leer=new Scanner(System.in);
 
         System.out.print("Ingrese una palabra o frase: ");
-        String var = leer.nextLine();
+        String var1 = leer.nextLine();
 
-        if(var.length() == 8){
+        if(var1.substring(0,1).equals("A")){
             System.out.print("Correcto! \n");
         }else{
             System.out.print("Incorrecto!\n");

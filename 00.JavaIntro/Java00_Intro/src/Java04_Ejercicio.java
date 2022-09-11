@@ -2,21 +2,18 @@
  * @autor Aguppesce
  * */
 
-//Ejercicio 03: Escribir un programa que pida tu nombre, lo guarde en una variable y lo muestre por pantalla.
+//Ejercicio 04: Escribir un programa que pida una frase y la muestre toda en mayúsculas y después toda en minúsculas. Nota: investigar la función toUpperCase() y toLowerCase() en Java.
 
 import java.util.Scanner;
 
-public class Java03_Ejercicio {
+public class Java04_Ejercicio {
     public static void main(String[] args) {
-        String var,nom;
 
         Scanner leer=new Scanner(System.in);
 
         System.out.print("Ingrese su nombre: ");
-        nom = leer.nextLine();
-        var=nom;
-        System.out.print("Su nombre es: "+var+"\n");
-
-
+        String nom = leer.nextLine();
+        System.out.print("Nombre en mayúscula: "+(nom.toUpperCase())+"\n");
+        System.out.print("Nombre en minúscula: "+(nom.toLowerCase())+"\n");
     }
 }

@@ -1,6 +1,12 @@
+/**
+ * @autor Aguppesce
+ * */
+
+//Ejercicio 02: Escribir un programa que pida dos números enteros por teclado y calcule la suma de los dos. El programa deberá después mostrar el resultado de la suma
+
 import java.util.Scanner;
 
-public class Java01_Ejercicio {
+public class Java02_Ejercicio {
     public static void main(String[] args) {
         int num1,num2;
 

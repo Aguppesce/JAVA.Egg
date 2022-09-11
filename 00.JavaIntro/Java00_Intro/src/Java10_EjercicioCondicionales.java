@@ -2,19 +2,20 @@
  * @autor Aguppesce
  * */
 
-//Ejercicio 09: Crear un programa que pida una frase y si esa frase es igual a “eureka” el programa pondrá un mensaje de Correcto, sino mostrará un mensaje de Incorrecto. Nota: investigar la función equals() en Java.
+//Ejercicio 10: Realizar un programa que solo permita introducir solo frases o palabras de 8 de largo. Si el usuario ingresa una frase o palabra de 8 de largo se deberá de imprimir un mensaje por pantalla que diga “CORRECTO”, en caso contrario, se deberá imprimir “INCORRECTO”. Nota: investigar la función Lenght() en Java.
 
 import java.util.Scanner;
 
-public class Java09_EjercicioCondicionales {
+public class Java10_EjercicioCondicionales {
     public static void main(String[] args) {
+
         Scanner leer=new Scanner(System.in);
 
-        System.out.print("Ingrese una palabra: ");
-        String var1 = leer.nextLine();
+        System.out.print("Ingrese una palabra o frase: ");
+        String var = leer.nextLine();
 
-        if(var1.equals("eureka")){
-            System.out.print("Correcto!\n");
+        if(var.length() == 8){
+            System.out.print("Correcto! \n");
         }else{
             System.out.print("Incorrecto!\n");
         }

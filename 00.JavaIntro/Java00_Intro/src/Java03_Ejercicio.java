@@ -1,17 +1,22 @@
-//Ejercicio 02: Escribir un programa que pida dos números enteros por teclado y calcule la suma de los dos. El programa deberá después mostrar el resultado de la suma
+/**
+ * @autor Aguppesce
+ * */
+
+//Ejercicio 03: Escribir un programa que pida tu nombre, lo guarde en una variable y lo muestre por pantalla.
 
 import java.util.Scanner;
 
-public class Java02_Ejercicio {
+public class Java03_Ejercicio {
     public static void main(String[] args) {
-        int num1,num2;
+        String var,nom;
 
         Scanner leer=new Scanner(System.in);
 
-        System.out.print("Ingrese número 1: ");
-        num1 = leer.nextInt();
-        System.out.print("Ingrese número 2: ");
-        num2 = leer.nextInt();
-        System.out.print("La suma es: "+(num1+num2)+"\n");
+        System.out.print("Ingrese su nombre: ");
+        nom = leer.nextLine();
+        var=nom;
+        System.out.print("Su nombre es: "+var+"\n");
+
+
     }
 }

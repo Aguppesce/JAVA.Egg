@@ -2,22 +2,21 @@
  * @autor Aguppesce
  * */
 
-//Ejercicio 08: Crear un programa que dado un numero determine si es par o impar.
+//Ejercicio 09: Crear un programa que pida una frase y si esa frase es igual a “eureka” el programa pondrá un mensaje de Correcto, sino mostrará un mensaje de Incorrecto. Nota: investigar la función equals() en Java.
 
 import java.util.Scanner;
 
-public class Java08_EjercicioCondicionales {
+public class Java09_EjercicioCondicionales {
     public static void main(String[] args) {
-
         Scanner leer=new Scanner(System.in);
 
-        System.out.print("Ingrese un número: ");
-        int num = leer.nextInt();
+        System.out.print("Ingrese una palabra: ");
+        String var1 = leer.nextLine();
 
-        if(num%2==0){
-            System.out.print("Par\n");
+        if(var1.equals("eureka")){
+            System.out.print("Correcto!\n");
         }else{
-            System.out.print("Impar\n");
+            System.out.print("Incorrecto!\n");
         }
     }
 }
