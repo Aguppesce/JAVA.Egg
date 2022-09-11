@@ -22,3 +22,22 @@ public class Java14_EjercicioBucles_SentenciasDeSalto_Break_Continue {
         System.out.println("Supero el limite, el total es: " + cont);
     }
 }
+
+//OTRA SOLUCIÓN
+
+/*
+public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
+        int suma = 0;
+        System.out.println("Ingrese el limite inicial");
+        int limite = leer.nextInt();
+
+        do {
+            System.out.println("Ingrese un numero");
+                int n1 = leer.nextInt();
+                suma = suma + n1;
+
+        }while (limite>suma);
+
+    }
+* */
