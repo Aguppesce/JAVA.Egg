@@ -1,0 +1,19 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÑŸ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(÷º©½üÿÿÿÿ
+T
+java:S1117"9Rename "radio" which hides the field declared at line 11.(Óğ¿ùÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(†„˜õşÿÿÿÿ
+T
+java:S11175"9Rename "radio" which hides the field declared at line 11.(—íÖ‡üÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(ÓºÀåøÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(²Áç‹ùÿÿÿÿ
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(è²  
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(«ËŸœ
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(—¡½øÿÿÿÿ
+f	java:S128D"LEnd this switch case with an unconditional break, return or throw statement.(‰ÆÄÎşÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(ÿìÒËüÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(©äşÚ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(ÜÁÆş
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(ÇËùùÿÿÿÿ
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(Â¥öİ

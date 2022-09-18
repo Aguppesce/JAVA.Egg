@@ -23,3 +23,13 @@ g
 7src/POO_00_Intro/Ejemplo/Intro_POO_Ejemplo_Mascota.java,e\f\ef1e56a43e58abaedd7cebd533cf6a1f35f0fc57
 b
 2src/POO_02_Ejercicio/entidades/Circunferencia.java,7\1\7112c8c04a0ddd7e9a0ad8207a83dcb4b9450229
+n
+>src/POO_02_Ejercicio_Solucion_00/entidades/Circunferencia.java,0\8\08034c5a248135389a631b7c48534a6ea9ff8fc1
+v
+Fsrc/POO_02_Ejercicio_Solucion_00/servicios/ServicioCircunferencia.java,f\d\fdd9c8145a6969793439e3b81e00d3bbd40adcbd
+[
++src/POO_01_Ejercicio_Solucion_01/Libro.java,b\b\bb5d2d97b6730b71fff6a041f6a6b12a5d4a29ec
+t
+Dsrc/POO_01_Ejercicio_Solucion_01/Main_POO_Ejercicio_Solucion_01.java,f\c\fc65509a85156c524e9f90d9f0379a68d056f34c
+d
+4src/POO_02_Ejercicio_Solucion_01/Circunferencia.java,4\8\48a6d0f3b375eb37b0a357e800d49b079daf770f
