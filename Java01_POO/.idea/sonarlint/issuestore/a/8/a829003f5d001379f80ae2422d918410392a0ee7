@@ -1,0 +1,7 @@
+
+~
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "area".(ÛÈÓ¨ùÿÿÿÿ8øí¹ù´0
+~
+java:S1488"aImmediately return this expression instead of assigning it to the temporary variable "perimetro".(ßç£8ùí¹ù´0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ë¹Ñ£
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÒŒß8‹î¹ù´0

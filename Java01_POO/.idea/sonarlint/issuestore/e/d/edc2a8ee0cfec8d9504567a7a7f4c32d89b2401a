@@ -1,0 +1,12 @@
+
+\
+java:S21842"ACast one of the operands of this division operation to a "float".(ÕÚøÍüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Œ„¾èøÿÿÿÿ
+;
+java:S1659"%Declare "numero2" on a separate line.(ô³¼
+S	java:S106"9Replace this use of System.out or System.err by a logger.(…öæßüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†¶é“
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(İ«°‡ùÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(êÃöûÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(İ«°‡ùÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(êÃöûÿÿÿÿ
