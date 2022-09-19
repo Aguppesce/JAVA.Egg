@@ -1,15 +1,15 @@
-package Ejercicio05Video.entidades;
+package POO_05_Ejercicio_Solucion_01.entidades;
+
 /**
- *
- * @author Agu
+ * @author Aguppesce
  */
 public class Cuenta {
     private Integer numeroCuenta;
     private long dni;
     private double saldoActual;
-    
+
     public Cuenta(){
-        
+
     }
 
     public Cuenta(Integer numeroCuenta, long dni, double saldoActual) {
@@ -41,6 +41,4 @@ public class Cuenta {
     public void setSaldoActual(double saldoActual) {
         this.saldoActual = saldoActual;
     }
-    
-    
 }

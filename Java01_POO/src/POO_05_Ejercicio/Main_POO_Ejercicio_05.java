@@ -1,5 +1,7 @@
 package POO_05_Ejercicio;
 
+import POO_05_Ejercicio.servicios.ServicioCuenta;
+
 /**
  * @author Aguppesce
  */
@@ -18,6 +20,7 @@ atributos: numeroCuenta (entero), el DNI del cliente (entero largo), el saldo ac
 * */
 public class Main_POO_Ejercicio_05 {
     public static void main(String[] args) {
-
+        ServicioCuenta sc = new ServicioCuenta();
+        sc.ejecutarMenuCuenta();
     }
 }
