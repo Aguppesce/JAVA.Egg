@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="348acad1-c982-405e-a3f0-feb6bc7c3ad2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build/classes/IntroRelacionesEntreClases/Mascotas/IntroRelacionesEntreClasesMascotaAPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/IntroRelacionesEntreClases/Mascotas/IntroRelacionesEntreClasesMascotaAPP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IntroRelacionesEntreClases/Mascotas/IntroRelacionesEntreClasesMascotaAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IntroRelacionesEntreClases/Mascotas/IntroRelacionesEntreClasesMascotaAPP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/ErrorControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/ErrorControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/LibroControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/LibroControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/PortalControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/PortalControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Autor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Editorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Editorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/servicios/LibroServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/servicios/LibroServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/registroLibro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Foto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Foto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Mascota.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Mascota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Voto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Voto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Zona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/servicios/MascotaServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../12.JavaSpringBoot/src/main/java/com/example/demo/servicios/MascotaServicio.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26naNsbUsMOSBpI7NE7zEzxjtQp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../12.JavaSpringBoot.Ejercicio01" />
+  </component>
+  <component name="RunManager">
+    <configuration name="IntroRelacionesEntreClasesMascotaAPP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IntroRelacionesEntreClases.Mascotas.IntroRelacionesEntreClasesMascotaAPP" />
+      <module name="04.JavaRelacionesEntreClases" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IntroRelacionesEntreClases.Mascotas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.IntroRelacionesEntreClasesMascotaAPP" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="348acad1-c982-405e-a3f0-feb6bc7c3ad2" name="Changes" comment="" />
+      <created>1648061768599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648061768599</updated>
+    </task>
+    <servers />
+  </component>
+</project>
