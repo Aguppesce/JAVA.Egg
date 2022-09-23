@@ -1,0 +1,39 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëÏö¢
+4
+java:S2119"Save and re-use this "Random".(¾Çöè
+\
+java:S3457"AFormat specifiers should be used instead of string concatenation.(…Èï¸ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(…Èï¸ıÿÿÿÿ
+s
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(¬ÈÁœÿÿÿÿÿ8É€¥µ0
+@
+java:S3457"%String contains no format specifiers.(¬ÈÁœÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬ÈÁœÿÿÿÿÿ
+;
+java:S3457"%String contains no format specifiers.(æ¶Şó
+N	java:S106"9Replace this use of System.out or System.err by a logger.(æ¶Şó
+@
+java:S3457"%String contains no format specifiers.(œè¢¹ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(œè¢¹ÿÿÿÿÿ
+;
+java:S3457"%String contains no format specifiers.(À³Üº
+N	java:S106"9Replace this use of System.out or System.err by a logger.(À³Üº
+M	java:S106"9Replace this use of System.out or System.err by a logger.(‹¡ÛB
+;
+java:S3457("%String contains no format specifiers.(·ø…æ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(·ø…æ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(…úˆÓ
+;
+java:S34574"%String contains no format specifiers.(±ƒŸ¡
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(±ƒŸ¡
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(óöß†
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(è¸â¢
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(ø¿âÿÿÿÿÿ
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(‹ÈË•
+H
+java:S6126G"2Replace this String concatenation with Text block.(‹ÈË•
+D
+java:S1481R")Remove this unused "flag" local variable.(ŸÿáÑÿÿÿÿÿ
+>	java:S131X""Add a default case to this switch.(°€àâ8ô¹­µ0
+U	java:S106c"9Replace this use of System.out or System.err by a logger.(í‡ÕÂ8õ¹­µ0
