@@ -1,5 +1,6 @@
 package com.springboot.ejercicio01.entidades;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,9 +12,12 @@ public class Editorial {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @Column(length=24)
     private String id;
-    
+
+    @Column(unique = true)
     private String nombre;
+
     private Boolean alta;    
 
     public Editorial() {

@@ -1,0 +1,15 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Æ¢ªëýÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+Q	java:S125
+"<This block of commented-out lines of code should be removed.(Ñ‚
+h
+java:S3776."RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¡ªÎÝ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(–ô´é
+2
+java:S1116@"Remove this empty statement.(–ô´é
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(èßÙ«ýÿÿÿÿ
+Q	java:S125N"<This block of commented-out lines of code should be removed.(‘“í
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ

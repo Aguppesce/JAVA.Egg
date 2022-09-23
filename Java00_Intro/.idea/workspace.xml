@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b182f4ba-dacc-4f2b-b68d-07106e6dd2b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Java00_Integrador_Ejemplo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio05.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio06.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio07.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio08.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio09.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio26.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Ejercicio28.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Integrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/build/classes/JavaIntro/NewMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio17.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio18.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio19.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio20.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio21.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio22.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio23.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio24.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio25.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio26.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Ejercicio28.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Integrador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01.JavaIntro/src/JavaIntro/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.JavaPOO/src/JavaIntroPOO/mascotapp/MascotaAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02.JavaPOO/src/JavaIntroPOO/mascotapp/MascotaAPP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.JavaPOO/src/JavaIntroPOO/mascotapp/entidades/Mascota.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02.JavaPOO/src/JavaIntroPOO/mascotapp/entidades/Mascota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02.JavaPOO/src/JavaIntroPOO/mascotapp/servicios/ServicioMascota.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../02.JavaPOO/src/JavaIntroPOO/mascotapp/servicios/ServicioMascota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04.JavaRelacionesEntreClases/build/classes/IntroRelacionesEntreClases/Mascotas/IntroRelacionesEntreClasesMascotaAPP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../04.JavaRelacionesEntreClases/build/classes/IntroRelacionesEntreClases/Mascotas/IntroRelacionesEntreClasesMascotaAPP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04.JavaRelacionesEntreClases/src/IntroRelacionesEntreClases/Mascotas/IntroRelacionesEntreClasesMascotaAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04.JavaRelacionesEntreClases/src/IntroRelacionesEntreClases/Mascotas/IntroRelacionesEntreClasesMascotaAPP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/ErrorControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/ErrorControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/LibroControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/LibroControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/PortalControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/controladores/PortalControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Autor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Editorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Editorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/entidades/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/servicios/AutorServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/servicios/AutorServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/servicios/LibroServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/java/com/springboot/ejercicio01/servicios/LibroServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/registroLibro.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot.Ejercicio01/src/main/resources/templates/registroLibro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Foto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Foto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Mascota.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Mascota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Voto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Voto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/entidades/Zona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/servicios/MascotaServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../12.JavaSpringBoot/src/main/java/com/example/demo/servicios/MascotaServicio.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EbCVXc3Y03rm4xhaQy8zwLQh31" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Java17_EjercicioBucles_SentenciasDeSalto_Break_Continue">
+    <configuration name="Java01_Intro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java01_Intro" />
+      <module name="Java00_Intro" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java09_EjercicioCondicionales" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java09_EjercicioCondicionales" />
+      <module name="Java00_Intro" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java17_EjercicioBucles_SentenciasDeSalto_Break_Continue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java17_EjercicioBucles_SentenciasDeSalto_Break_Continue" />
+      <module name="Java00_Intro" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Java17_EjercicioBucles_SentenciasDeSalto_Break_Continue" />
+        <item itemvalue="Application.Java09_EjercicioCondicionales" />
+        <item itemvalue="Application.Java01_Intro" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b182f4ba-dacc-4f2b-b68d-07106e6dd2b2" name="Changes" comment="" />
+      <created>1662854925422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662854925422</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

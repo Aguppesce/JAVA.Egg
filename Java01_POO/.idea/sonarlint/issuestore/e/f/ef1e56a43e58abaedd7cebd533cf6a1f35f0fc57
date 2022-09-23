@@ -1,0 +1,22 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(±Ó†æþÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ªÊ‘¦ÿÿÿÿÿ
+[
+java:S1226B"@Introduce a new variable instead of reusing the parameter "num".(‘¶‡žúÿÿÿÿ
+L
+java:S18544"6Remove this useless assignment to local variable "m1".(¤Ú˜ä
+S
+java:S1854+"8Remove this useless assignment to local variable "leer".(Úª–½üÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÃþÌÚ
+D
+java:S1481+")Remove this unused "leer" local variable.(Úª–½üÿÿÿÿ
+O	java:S125,"<This block of commented-out lines of code should be removed.(ÊÆO
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(åµ”ˆûÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(´Þúÿÿÿÿ
+7
+java:S1116="Remove this empty statement.(Åñ­õþÿÿÿÿ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(¼ƒöü
+R
+java:S1854B"7Remove this useless assignment to local variable "num".(‘¶‡žúÿÿÿÿ
+O
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8æÂ¾ý²0

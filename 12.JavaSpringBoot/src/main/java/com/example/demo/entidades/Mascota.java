@@ -9,7 +9,6 @@ import javax.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
-@Table(name = "mascota")
 public class Mascota {
     
     @Id

@@ -1,0 +1,9 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„¯È³þÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(Çµí‘8–í¢Õ²0
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(¡ü¯¸8æí¢Õ²0
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8æí¢Õ²0

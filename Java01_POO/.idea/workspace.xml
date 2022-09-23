@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66b6e69e-4be8-46cb-b717-985a98b07708" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EbrXk0qPO5NoQWcnsBeTNBfImi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "O:/Documentos/GoogleDrive/UTN/[UTN]-Sistema_de_procesamiento_de_datos/[SPD]-Tecnicatura_Git/[UTN.Programacion]-Java/[Java]-Leccion4/Aritmetica",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "fileTemplates"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="O:\Documentos\1.Proyectos.Cursos.Facultad\05.Egg\01.Java\Java01_POO\src\POO_03_Ejercicio_Solucion_01" />
+      <recent name="O:\Documentos\1.Proyectos.Cursos.Facultad\05.Egg\01.Java\Java01_POO\src\POO_03_Ejercicio_Solucion_00" />
+      <recent name="O:\Documentos\1.Proyectos.Cursos.Facultad\05.Egg\01.Java\Java01_POO\src\POO_01_Ejercicio_Solucion_01" />
+      <recent name="O:\Documentos\1.Proyectos.Cursos.Facultad\05.Egg\01.Java\Java01_POO\src" />
+      <recent name="O:\Documentos\1.Proyectos.Cursos.Facultad\05.Egg\01.Java\Java01_POO\src\POO_02_Ejercicio\" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main_POO_Ejercicio_06">
+    <configuration name="Main_POO_Ejercicio_02_Solucion_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="POO_02_Ejercicio_Solucion_01.Main_POO_Ejercicio_02_Solucion_01" />
+      <module name="Java01_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="POO_02_Ejercicio_Solucion_01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_POO_Ejercicio_03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="POO_03_Ejercicio.Main_POO_Ejercicio_03" />
+      <module name="Java01_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="POO_03_Ejercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_POO_Ejercicio_04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="POO_04_Ejercicio.Main_POO_Ejercicio_04" />
+      <module name="Java01_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="POO_04_Ejercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_POO_Ejercicio_05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="POO_05_Ejercicio.Main_POO_Ejercicio_05" />
+      <module name="Java01_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="POO_05_Ejercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_POO_Ejercicio_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="POO_06_Ejercicio.Main_POO_Ejercicio_06" />
+      <module name="Java01_POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="POO_06_Ejercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main_POO_Ejercicio_06" />
+        <item itemvalue="Application.Main_POO_Ejercicio_05" />
+        <item itemvalue="Application.Main_POO_Ejercicio_04" />
+        <item itemvalue="Application.Main_POO_Ejercicio_03" />
+        <item itemvalue="Application.Main_POO_Ejercicio_02_Solucion_01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66b6e69e-4be8-46cb-b717-985a98b07708" name="Changes" comment="" />
+      <created>1662875176303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662875176303</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

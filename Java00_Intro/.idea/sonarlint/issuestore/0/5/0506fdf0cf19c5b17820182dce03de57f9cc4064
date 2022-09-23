@@ -1,0 +1,22 @@
+
+g	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¦¬¥ýÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+^
+java:S1659"ADeclare "num2" and all following declarations on a separate line.(¸à–‹8×ì£Ð²0
+T	java:S106"9Replace this use of System.out or System.err by a logger.(†ît8×ì£Ð²0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(®ñ‰üÿÿÿÿ8×ì£Ð²0
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(Ð¬Óþüÿÿÿÿ8çì£Ð²0
+T
+java:S6126+"2Replace this String concatenation with Text block.(Ð¬Óþüÿÿÿÿ8çì£Ð²0
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(Ã¦…Ð8çì£Ð²0
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(Òóé»8çì£Ð²0
+>	java:S131@""Add a default case to this switch.(ü‹¢ï8çì£Ð²0
+U	java:S106B"9Replace this use of System.out or System.err by a logger.(™àƒ£8çì£Ð²0
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(ŽÛþ…ÿÿÿÿÿ8çì£Ð²0
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(Ú°ü–úÿÿÿÿ8çì£Ð²0
+U	java:S106L"9Replace this use of System.out or System.err by a logger.(âÇ±©8çì£Ð²0
+Z	java:S106O"9Replace this use of System.out or System.err by a logger.(ŒÌñØÿÿÿÿÿ8çì£Ð²0
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(äÌ©Ýûÿÿÿÿ8çì£Ð²0
+W	java:S125\"<This block of commented-out lines of code should be removed.(‹ÑèO8öì£Ð²0

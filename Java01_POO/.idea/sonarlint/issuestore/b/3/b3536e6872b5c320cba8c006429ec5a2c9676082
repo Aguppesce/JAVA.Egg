@@ -1,0 +1,33 @@
+
+D
+java:S1121(".Extract the assignment out of this expression.(ÜËîÀ
+D
+java:S11213".Extract the assignment out of this expression.(ÜËîÀ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«óà
+;
+java:S3457"%String contains no format specifiers.(¸Ô†‰
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¸Ô†‰
+@
+java:S3457"%String contains no format specifiers.(ÂÌŒÜıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÂÌŒÜıÿÿÿÿ
+S
+java:S1854("=Remove this useless assignment to local variable "resultado".(ÜËîÀ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(Îôù
+S
+java:S18543"=Remove this useless assignment to local variable "resultado".(ÜËîÀ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(ŸŠƒõûÿÿÿÿ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(«”“˜
+H
+java:S6126;"2Replace this String concatenation with Text block.(«”“˜
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(é…ëúÿÿÿÿ
+S	java:S106R"9Replace this use of System.out or System.err by a logger.( ÓÂŞûÿÿÿÿ
+M	java:S106Y"9Replace this use of System.out or System.err by a logger.(Â™M
+S	java:S106\"9Replace this use of System.out or System.err by a logger.(¸‰Çšûÿÿÿÿ
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(Ö¶²ñşÿÿÿÿ
+N	java:S106b"9Replace this use of System.out or System.err by a logger.(ÊÌŒã
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(—¨ÙŠıÿÿÿÿ
+S	java:S106h"9Replace this use of System.out or System.err by a logger.(½©Æ£üÿÿÿÿ
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(ÇËùùÿÿÿÿ
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(™Íûşÿÿÿÿ
+L
+java:S1144E"1Remove this unused private "elegirOpcion" method.(àÛ¿–ıÿÿÿÿ

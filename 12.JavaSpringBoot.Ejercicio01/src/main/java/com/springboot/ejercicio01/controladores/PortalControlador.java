@@ -15,9 +15,9 @@ public class PortalControlador {
         return "index.html";
     }
 
-    @GetMapping("/libro")
+    @GetMapping("/registroLibro")
     public String registro() {
-        return "registro.html";
+        return "registroLibro.html";
     }
 
 }
