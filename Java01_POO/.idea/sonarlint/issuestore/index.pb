@@ -133,5 +133,3 @@ Ssrc/POO_15_Ejercicio_Extra_Solucion_00/Main_POO_Ejercicio_16_Extra_Solucion_00.
 Ssrc/POO_16_Ejercicio_Extra_Solucion_00/Main_POO_Ejercicio_16_Extra_Solucion_00.java,0\c\0c16bcf966b344020d6a3a9215c668fd4d1c49f2
 e
 5src/POO_03_Ejercicio/servicios/ServicioOperacion.java,b\3\b3536e6872b5c320cba8c006429ec5a2c9676082
-_
-/src/POO_06_Ejercicio/Main_POO_Ejercicio_06.java,c\d\cd0efbfbc4b3f8d334e2275177dedbe2a40c9bbf
