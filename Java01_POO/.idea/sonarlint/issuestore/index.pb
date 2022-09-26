@@ -17,8 +17,6 @@ t
 Dsrc/POO_01_Ejercicio_Solucion_00/Main_POO_Ejercicio_Solucion_00.java,7\6\761e0e45c277bb34fe278945cd52037e94012e29
 _
 /src/POO_01_Ejercicio/Main_POO_Ejercicio_01.java,c\b\cb37b9ea115f9d7a9512eaa8e1bb8fb4ba7caf0c
-]
--src/POO_00_Intro/Arrays/Intro_POO_Arrays.java,1\8\18768d1b32d6831a7dd9399e09b00cfe67e5838e
 g
 7src/POO_00_Intro/Ejemplo/Intro_POO_Ejemplo_Mascota.java,e\f\ef1e56a43e58abaedd7cebd533cf6a1f35f0fc57
 b
@@ -133,3 +131,5 @@ Ssrc/POO_15_Ejercicio_Extra_Solucion_00/Main_POO_Ejercicio_16_Extra_Solucion_00.
 Ssrc/POO_16_Ejercicio_Extra_Solucion_00/Main_POO_Ejercicio_16_Extra_Solucion_00.java,0\c\0c16bcf966b344020d6a3a9215c668fd4d1c49f2
 e
 5src/POO_03_Ejercicio/servicios/ServicioOperacion.java,b\3\b3536e6872b5c320cba8c006429ec5a2c9676082
+_
+/src/POO_06_Ejercicio/Main_POO_Ejercicio_06.java,c\d\cd0efbfbc4b3f8d334e2275177dedbe2a40c9bbf
