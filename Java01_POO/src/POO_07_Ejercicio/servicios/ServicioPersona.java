@@ -69,7 +69,8 @@ public class ServicioPersona {
         System.out.printf("-----------MENÚ-----------\n" +
                 "1) Crear Persona\n" +
                 "2) Calcular IMC y mayoría de edad\n" +
-                "3) Mostrar personas\n" +
+                "3) Calcular promedio" +
+                "4) Mostrar personas\n" +
                 "0) Salir\n" +
                 "Ingrese su opción: ");
     }
@@ -106,6 +107,9 @@ public class ServicioPersona {
                     }
                     break;
                 case 3:
+                    //TODO calcularPromedio()
+                    break;
+                case 4:
                     for (Persona persona : personas) {
                         System.out.println(persona);
                     }

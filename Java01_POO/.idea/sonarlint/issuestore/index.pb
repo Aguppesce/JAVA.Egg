@@ -133,3 +133,5 @@ e
 5src/POO_03_Ejercicio/servicios/ServicioOperacion.java,b\3\b3536e6872b5c320cba8c006429ec5a2c9676082
 _
 /src/POO_06_Ejercicio/Main_POO_Ejercicio_06.java,c\d\cd0efbfbc4b3f8d334e2275177dedbe2a40c9bbf
+]
+-src/POO_00_Intro/Arrays/Intro_POO_Arrays.java,1\8\18768d1b32d6831a7dd9399e09b00cfe67e5838e
