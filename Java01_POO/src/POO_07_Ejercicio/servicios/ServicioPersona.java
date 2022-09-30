@@ -69,7 +69,7 @@ public class ServicioPersona {
         System.out.printf("-----------MENÚ-----------\n" +
                 "1) Crear Persona\n" +
                 "2) Calcular IMC y mayoría de edad\n" +
-                "3) Calcular promedio" +
+                "3) Calcular promedio\n" +
                 "4) Mostrar personas\n" +
                 "0) Salir\n" +
                 "Ingrese su opción: ");
@@ -90,16 +90,16 @@ public class ServicioPersona {
                     System.out.printf("Ingrese su nombre: ");
                     String nombre = leer.next().toUpperCase();
                     for (Persona persona : personas) {
-                        if (persona.getNombre().equals(nombre)) {
-                            System.out.println("Es mayor de edad?: " + esMayorDeEdad(persona));
+                        if (nombre.equals(persona.getNombre())) {
+                            System.out.println(persona.getNombre() + " Es mayor de edad?: " + esMayorDeEdad(persona));
                             if (calcularIMC(persona) == -1) {
-                                System.out.println("Tiene un peso ideal");
+                                System.out.println(persona.getNombre() + " Tiene un peso ideal");
                             }
                             if (calcularIMC(persona) == 0) {
-                                System.out.println("Esta por debajo del peso ideal");
+                                System.out.println(persona.getNombre() + " Esta por debajo del peso ideal");
                             }
                             if (calcularIMC(persona) == 1) {
-                                System.out.println("Tiene sobrepeso");
+                                System.out.println(persona.getNombre() +  " Tiene sobrepeso");
                             }
                         } else {
                             System.out.println("Usted no está en la lista. Primero debe registrar sus datos");
