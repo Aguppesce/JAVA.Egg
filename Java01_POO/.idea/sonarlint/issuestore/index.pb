@@ -15,8 +15,6 @@ m
 =src/POO_01_Ejercicio_Solucion_00/servicios/ServicioLibro.java,f\d\fdcd3c1ddbe2fb71a5c97a308c49bf1110090622
 t
 Dsrc/POO_01_Ejercicio_Solucion_00/Main_POO_Ejercicio_Solucion_00.java,7\6\761e0e45c277bb34fe278945cd52037e94012e29
-_
-/src/POO_01_Ejercicio/Main_POO_Ejercicio_01.java,c\b\cb37b9ea115f9d7a9512eaa8e1bb8fb4ba7caf0c
 g
 7src/POO_00_Intro/Ejemplo/Intro_POO_Ejemplo_Mascota.java,e\f\ef1e56a43e58abaedd7cebd533cf6a1f35f0fc57
 b
@@ -33,8 +31,6 @@ d
 4src/POO_02_Ejercicio_Solucion_01/Circunferencia.java,4\8\48a6d0f3b375eb37b0a357e800d49b079daf770f
 w
 Gsrc/POO_02_Ejercicio_Solucion_00/Main_POO_Ejercicio_02_Solucion_00.java,d\c\dcc870a50d3cc5cf7d84079337362722e22b2b58
-_
-/src/POO_02_Ejercicio/Main_POO_Ejercicio_02.java,7\7\773598013133d7466a6f4665ca8933dc2e651b66
 w
 Gsrc/POO_02_Ejercicio_Solucion_01/Main_POO_Ejercicio_02_Solucion_01.java,d\d\ddf10213017f4a8ee4a13072655d513c6e789286
 i
@@ -59,8 +55,6 @@ w
 Gsrc/POO_03_Ejercicio_Solucion_00/Main_POO_Ejercicio_03_Solucion_00.java,a\e\ae2d2612bc5dea9cf7824100b8abfabcef81fb53
 j
 :src/POO_04_Ejercicio_Solucion_00/entidades/Rectangulo.java,0\d\0d291740c94e8ebd7420d4860498cfa8e60a38b7
-_
-/src/POO_03_Ejercicio/Main_POO_Ejercicio_03.java,7\3\73a24fee3eb787f9c94254a80db411efbce1a78f
 w
 Gsrc/POO_04_Ejercicio_Solucion_00/Main_POO_Ejercicio_04_Solucion_00.java,6\6\663b22aafab0623ded6846a868e7b71ec873a71d
 w
@@ -69,16 +63,12 @@ j
 :src/POO_04_Ejercicio_Solucion_01/entidades/Rectangulo.java,f\8\f88a901ee294d2a1e628705b49a1f0ea22e9477e
 r
 Bsrc/POO_04_Ejercicio_Solucion_00/servicios/ServicioRectangulo.java,5\e\5eac7b77e9171d17442bc988d440d9a7fae21f7d
-_
-/src/POO_04_Ejercicio/Main_POO_Ejercicio_04.java,f\c\fce9201c5713f40b332f1e1513e1995af3350338
 r
 Bsrc/POO_04_Ejercicio_Solucion_01/servicios/ServicioRectangulo.java,6\1\61ef0d65bbf9e64848782e65816f07588e7252e5
 ^
 .src/POO_04_Ejercicio/entidades/Rectangulo.java,7\a\7ad9ce9383165c43fce0f58b34eeb1580cf6fa5d
 Z
 *src/POO_05_Ejercicio/entidades/Cuenta.java,1\9\19f5fb9d07047a57b5b0624bdf5637c07d921285
-f
-6src/POO_04_Ejercicio/servicios/ServicioRectangulo.java,9\f\9f08360469b082ec58842755480bdfa533f4e2da
 b
 2src/POO_05_Ejercicio/servicios/ServicioCuenta.java,2\3\23cf45d2bf4ef3b4525d0b3f70e84b8cd71b2cea
 f
@@ -108,10 +98,6 @@ k
 k
 ;src/POO_16_Ejercicio_Extra/Main_POO_Ejercicio_Extra_16.java,4\b\4bbf6e69900142ea6c4fb918607a9d3f5125e949
 w
-Gsrc/POO_07_Ejercicio_Solucion_00/Main_POO_Ejercicio_07_Solucion_00.java,9\0\907657351b378c230b6e3db76e04958ec66faae8
-w
-Gsrc/POO_07_Ejercicio_Solucion_01/Main_POO_Ejercicio_07_Solucion_01.java,5\4\548eb44f8e69a62e81025aa0eb26890fd1157aa0
-w
 Gsrc/POO_08_Ejercicio_Solcuion_00/Main_POO_Ejercicio_08_Solucion_00.java,0\1\0138bbbc093b27eb822f138d1130220aaead2d3f
 w
 Gsrc/POO_09_Ejercicio_Solucion_00/Main_POO_Ejercicio_09_Solucion_00.java,6\9\6986dc1c1e7fac70f04c906254fc848885a5bd4e
@@ -135,3 +121,11 @@ _
 /src/POO_06_Ejercicio/Main_POO_Ejercicio_06.java,c\d\cd0efbfbc4b3f8d334e2275177dedbe2a40c9bbf
 ]
 -src/POO_00_Intro/Arrays/Intro_POO_Arrays.java,1\8\18768d1b32d6831a7dd9399e09b00cfe67e5838e
+_
+/src/POO_02_Ejercicio/Main_POO_Ejercicio_02.java,7\7\773598013133d7466a6f4665ca8933dc2e651b66
+_
+/src/POO_03_Ejercicio/Main_POO_Ejercicio_03.java,7\3\73a24fee3eb787f9c94254a80db411efbce1a78f
+_
+/src/POO_01_Ejercicio/Main_POO_Ejercicio_01.java,c\b\cb37b9ea115f9d7a9512eaa8e1bb8fb4ba7caf0c
+_
+/src/POO_04_Ejercicio/Main_POO_Ejercicio_04.java,f\c\fce9201c5713f40b332f1e1513e1995af3350338
