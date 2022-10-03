@@ -1,0 +1,50 @@
+
+P
+java:S1121B".Extract the assignment out of this expression.(şŒŒ½üÿÿÿÿ8ÖÀÂ¸¹0
+_
+java:S2184N"BCast one of the operands of this division operation to a "double".(ÈàµÔ8æÀÂ¸¹0
+]
+java:S2184N"@Cast one of the operands of this integer division to a "double".(ÈàµÔ8õÀÂ¸¹0
+d
+java:S2184O"BCast one of the operands of this division operation to a "double".(ÁÂâ±øÿÿÿÿ8„ÁÂ¸¹0
+b
+java:S2184O"@Cast one of the operands of this integer division to a "double".(ÁÂâ±øÿÿÿÿ8…ÁÂ¸¹0
+d
+java:S2184P"BCast one of the operands of this division operation to a "double".(¿÷¼Œıÿÿÿÿ8…ÁÂ¸¹0
+b
+java:S2184P"@Cast one of the operands of this integer division to a "double".(¿÷¼Œıÿÿÿÿ8…ÁÂ¸¹0
+d
+java:S2184["BCast one of the operands of this division operation to a "double".(ï…¢œûÿÿÿÿ8…ÁÂ¸¹0
+b
+java:S2184["@Cast one of the operands of this integer division to a "double".(ï…¢œûÿÿÿÿ8…ÁÂ¸¹0
+d
+java:S2184\"BCast one of the operands of this division operation to a "double".(ú÷õäıÿÿÿÿ8…ÁÂ¸¹0
+b
+java:S2184\"@Cast one of the operands of this integer division to a "double".(ú÷õäıÿÿÿÿ8†ÁÂ¸¹0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´•À†ÿÿÿÿÿ
+c
+java:S1659"FDeclare "pesoIdeal" and all following declarations on a separate line.(íù›§8ÑÁÂ¸¹0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(öÑÎ°ûÿÿÿÿ8ØÁÂ¸¹0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(½Ù²…8àÁÂ¸¹0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(˜ÇÏû8áÁÂ¸¹0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ìó8âÁÂ¸¹0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Æ€¯¬8ãÁÂ¸¹0
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(¨ÊÃ8äÁÂ¸¹0
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(œ“‹8åÁÂ¸¹0
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(ÕÜ¨µ8ğÁÂ¸¹0
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(’Ñ…äøÿÿÿÿ8ñÁÂ¸¹0
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(†ÇÓ8òÁÂ¸¹0
+]
+java:S1854B";Remove this useless assignment to local variable "bandera".(şŒŒ½üÿÿÿÿ8òÁÂ¸¹0
+Z	java:S106A"9Replace this use of System.out or System.err by a logger.(œÙ®æúÿÿÿÿ8óÁÂ¸¹0
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(ï¿Ûúÿÿÿÿ8ôÁÂ¸¹0
+Z	java:S106Q"9Replace this use of System.out or System.err by a logger.(‰¢ÿèùÿÿÿÿ8õÁÂ¸¹0
+T	java:S106R"9Replace this use of System.out or System.err by a logger.(‡º…b8öÁÂ¸¹0
+U	java:S106S"9Replace this use of System.out or System.err by a logger.(Ï†œı8ÿÁÂ¸¹0
+Z	java:S106T"9Replace this use of System.out or System.err by a logger.(…Ï×óøÿÿÿÿ8€ÂÂ¸¹0
+Z	java:S106U"9Replace this use of System.out or System.err by a logger.(ï€Ëìÿÿÿÿÿ8€ÂÂ¸¹0
+U	java:S106V"9Replace this use of System.out or System.err by a logger.(õà³ª8€ÂÂ¸¹0
+Z	java:S106]"9Replace this use of System.out or System.err by a logger.(–’åÿÿÿÿÿ8ÂÂ¸¹0
+Z	java:S106^"9Replace this use of System.out or System.err by a logger.(ğ¤ùµúÿÿÿÿ8ÂÂ¸¹0
+Z	java:S106_"9Replace this use of System.out or System.err by a logger.(÷ÔµÉüÿÿÿÿ8‚ÂÂ¸¹0
+Z	java:S106`"9Replace this use of System.out or System.err by a logger.(Ü‚ºíıÿÿÿÿ8‚ÂÂ¸¹0
